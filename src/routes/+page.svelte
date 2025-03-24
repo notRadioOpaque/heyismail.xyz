@@ -11,3 +11,5 @@
 <SpecialBtn action={() => console.log('clicked special')} label="See what i can do" />
 
 <GetInTouchCard label="Get in touch" href="" />
+
+<h1 class="sub-heading">this is a test</h1>

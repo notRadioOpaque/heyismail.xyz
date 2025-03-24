@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 @theme {
@@ -12,13 +12,21 @@
 	--color-border-stroke: #292929;
 
 	/* Typography */
-	--font-manrope: "Manrope", "Inter", sans-serif;
+	--font-manrope: 'Manrope', 'Inter', sans-serif;
 
 	/* Text Colors */
 	--color-primary-text: #2f2f2f;
-	--color-secondary-text: #cccccc;
+	--color-secondary-text: #7d7d7d;
 	--color-tertiary-text: #8cff2e;
-	--color-subtext-text: #262626;
+	--color-subtext-text: #878787;
+}
+
+.heading {
+	@apply text-primary-text text-[90px] leading-[99px] tracking-[-3.6px];
+}
+
+.sub-heading {
+	@apply text-secondary-text text-[18px] leading-[18px] tracking-[-0.7px];
 }
 
 * {
