@@ -1,9 +1,14 @@
-<script>
-	let { label, action } = $props();
+<script lang="ts">
+	interface Props {
+		label: string;
+		href: string;
+	}
+
+	let { label, href }: Props = $props();
 </script>
 
-<button
-	onclick={action}
+<a
+	{href}
 	class="group bg-tertiary-bg text-primary-text relative h-64 w-full max-w-2xl rounded-3xl text-lg font-medium transition-all duration-300"
 >
 	<div class="flex h-full w-full flex-col justify-between p-12">
@@ -37,4 +42,4 @@
 			</div>
 		</div>
 	</div>
-</button>
+</a>

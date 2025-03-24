@@ -10,4 +10,4 @@
 <Button action={() => console.log('clicked')} label="Contact me"></Button>
 <SpecialBtn action={() => console.log('clicked special')} label="See what i can do" />
 
-<GetInTouchCard label="Get in touch" action={() => {}} />
+<GetInTouchCard label="Get in touch" href="" />
