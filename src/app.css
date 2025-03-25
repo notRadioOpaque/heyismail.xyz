@@ -23,11 +23,11 @@
 }
 
 .heading {
-	@apply text-primary-text text-[90px] leading-[99px] tracking-[-3.6px];
+	@apply text-[90px] leading-[99px] tracking-[-3.6px];
 }
 
 .sub-heading {
-	@apply text-secondary-text text-[18px] leading-[18px] tracking-[-0.7px];
+	@apply text-[18px] leading-[18px] tracking-[-0.7px];
 }
 
 * {

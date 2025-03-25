@@ -4,7 +4,7 @@
 
 <button
 	onclick={action}
-	class="group bg-tertiary-bg text-primary-text shadow-tertiary-bg/50 relative flex cursor-pointer items-center rounded-full px-6 py-2 text-lg font-medium shadow-lg transition-all duration-300 hover:shadow-none"
+	class="group bg-tertiary-bg text-primary-text shadow-tertiary-bg/50 relative flex w-max cursor-pointer items-center rounded-full px-6 py-2 text-lg font-medium shadow-lg transition-all duration-300 hover:shadow-none"
 >
 	<span>{label}</span>
 
