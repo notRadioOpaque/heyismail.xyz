@@ -2,7 +2,7 @@
 	import { Dot, SpecialBtn } from '$lib/components';
 </script>
 
-<div class="bg-secondary-bg">
+<footer class="bg-secondary-bg">
 	<div class="flex items-center justify-between px-10 py-8">
 		<div class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -59,4 +59,4 @@
 			<img class="mx-2" src="icons/svelte_icon.svg" alt="svelte icon" width="12" height="12" />
 		</div>
 	</div>
-</div>
+</footer>
