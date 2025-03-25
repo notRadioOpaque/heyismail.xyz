@@ -12,4 +12,4 @@
 
 <GetInTouchCard label="Get in touch" href="" />
 
-<h1 class="sub-heading">this is a test</h1>
+<h1 class="heading">this is a test</h1>
