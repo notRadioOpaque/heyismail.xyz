@@ -19,7 +19,7 @@
 	const glowSize = $derived(sizeMap[size]?.glow);
 </script>
 
-<div class="relative flex w-max items-center justify-center border bg-black">
+<div class="relative flex w-max items-center justify-center">
 	<!-- The main orb with pulsating animation -->
 	<div class="{glowSize} bg-tertiary-bg animate-ping rounded-full"></div>
 
