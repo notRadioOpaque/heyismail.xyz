@@ -1,15 +1,5 @@
 <script lang="ts">
-	import { Button, SpecialBtn, Dot } from '$lib/components';
-	import GetInTouchCard from '$lib/components/GetInTouchCard.svelte';
+	import Hero from './Hero.svelte';
 </script>
 
-<h1 class="!text-primary-text text-2xl">Welcome to SvelteKit</h1>
-
-<Dot size="sm" />
-
-<Button action={() => console.log('clicked')} label="Contact me"></Button>
-<SpecialBtn action={() => console.log('clicked special')} label="See what i can do" />
-
-<GetInTouchCard label="Get in touch" href="" />
-
-<h1 class="heading">this is a test</h1>
+<Hero />
