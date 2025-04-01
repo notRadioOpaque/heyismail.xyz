@@ -29,9 +29,9 @@ export const SOCIALS = [
 
 // Navigation Links
 export const NAV_LINKS = [
-  { name: "Projects", path: "/projects" },
   { name: "About", path: "/about" },
   { name: "Experience", path: "/experience" },
+  { name: "Projects", path: "/projects" },
 ];
 
 // Tech stack
