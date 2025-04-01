@@ -10,7 +10,7 @@
 
 <a
 	{href}
-	class="group text-primary-text relative h-64 w-full max-w-2xl rounded-3xl bg-white text-lg font-medium transition-all duration-300"
+	class="group text-primary-text relative h-52 w-full max-w-2xl rounded-3xl bg-white text-lg font-medium transition-all duration-300"
 >
 	<div class="flex h-full w-full flex-col justify-between p-12">
 		<!-- Text that slides right on hover -->
@@ -23,7 +23,7 @@
 			<div
 				class="transition-transform duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]"
 			>
-				{icon}
+				<img src={icon} alt={label + ' ' + 'icon'} />
 			</div>
 		</div>
 	</div>
