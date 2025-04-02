@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components';
-	import * as constants from '$lib/constants';
+	import { NAV_LINKS } from '$lib/constants';
 </script>
 
 <header class="border-border-stroke-light flex items-center justify-between border px-10 py-8">
@@ -8,7 +8,7 @@
 		<div class="w-1/3">Logo</div>
 
 		<nav class="flex w-1/3 gap-10">
-			{#each constants.NAV_LINKS as navLink}
+			{#each NAV_LINKS as navLink}
 				<a href={navLink.path} class="hover:text-subtext-text text-lg font-medium transition-colors"
 					>{navLink.name}</a
 				>
