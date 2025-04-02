@@ -25,7 +25,7 @@
 
 	<div class="mt-20 flex flex-col gap-[120px]">
 		{#each projectCount as project}
-			<a href="/" class="flex flex-col gap-8">
+			<a href={`/projects/${project}`} class="flex flex-col gap-8">
 				<div class="h-[683px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100">
 					<img src="" alt="" />
 				</div>
