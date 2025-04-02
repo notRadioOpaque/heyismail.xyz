@@ -13,7 +13,7 @@
 			<p class="text-subtext-text text-sm">Back to top</p>
 
 			<div class="flex h-11 w-11 items-center justify-center rounded-full bg-white">
-				<img class="mx-2" src="icons/arrow_up.svg" alt="svelte icon" width="24" height="24" />
+				<img class="mx-2" src="/icons/arrow_up.svg" alt="svelte icon" width="24" height="24" />
 			</div>
 		</div>
 	</div>
@@ -29,7 +29,7 @@
 			<div class="h-max">
 				<div class="flex h-[150px] w-full items-center gap-4">
 					<div class="w-[100px] overflow-hidden rounded-xl">
-						<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
+						<img class="block h-full w-full object-cover" src="/images/ismail.png" alt="" />
 					</div>
 
 					<div class="flex flex-col">
@@ -143,7 +143,7 @@
 
 		<div class="text-subtext-text flex items-center text-sm">
 			Built with <span class="mx-2">☕</span> and
-			<img class="mx-2" src="icons/svelte_icon.svg" alt="svelte icon" width="12" height="12" />
+			<img class="mx-2" src="/icons/svelte_icon.svg" alt="svelte icon" width="12" height="12" />
 		</div>
 	</div>
 </footer>
