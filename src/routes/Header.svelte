@@ -3,7 +3,7 @@
 	import { NAV_LINKS } from '$lib/constants';
 </script>
 
-<header class="border-border-stroke-light flex items-center justify-between border px-10 py-8">
+<header class="border-border-stroke-light flex items-center justify-between border px-20 py-8">
 	<div class="flex w-full items-center justify-between">
 		<div class="w-1/3">Logo</div>
 

@@ -3,7 +3,7 @@
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 </script>
 
-<section class="bg-secondary-bg flex flex-col gap-24 px-10 py-[160px]">
+<section class="bg-secondary-bg flex flex-col gap-24 px-20 py-[160px]">
 	<div class="flex flex-col gap-4">
 		<div class="flex items-center gap-2">
 			<Dot size="md" />

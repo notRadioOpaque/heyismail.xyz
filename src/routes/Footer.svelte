@@ -3,7 +3,7 @@
 </script>
 
 <footer class="bg-secondary-bg">
-	<div class="flex items-center justify-between px-10 py-8">
+	<div class="flex items-center justify-between px-20 py-8">
 		<div class="flex items-center gap-2">
 			<Dot size="sm" />
 			<p class="text-sm text-white">Available for work</p>
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 
-	<div class="border-border-stroke flex h-[795px] items-center justify-center border-y px-10">
+	<div class="border-border-stroke flex h-[795px] items-center justify-center border-y px-20">
 		<div class="flex w-1/2 flex-col gap-10">
 			<h2 class="text-[96px] leading-[96px] tracking-[-4.8px] text-white">
 				Let's create something extraordinary together<span class="text-tertiary-text">.</span>
@@ -136,7 +136,7 @@
 		</div>
 	</div>
 
-	<div class="flex w-full items-center justify-between px-10 py-[60px]">
+	<div class="flex w-full items-center justify-between px-20 py-[60px]">
 		<div class="text-2xl text-white">Logo</div>
 
 		<p class="text-subtext-text text-sm">Copyright © Ismail Muyideen, 2025</p>

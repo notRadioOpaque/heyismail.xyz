@@ -5,7 +5,7 @@
 	import { SOCIALS } from '$lib/constants';
 </script>
 
-<section class="flex flex-col gap-24 bg-[#f7f7f7] px-10 py-[160px]">
+<section class="flex flex-col gap-24 bg-[#f7f7f7] px-20 py-[160px]">
 	<div class="flex flex-col gap-4">
 		<div class="flex items-center gap-2">
 			<Dot size="md" />

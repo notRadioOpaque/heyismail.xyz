@@ -3,7 +3,7 @@
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 </script>
 
-<section class="flex px-10 py-[160px]">
+<section class="flex px-20 py-[160px]">
 	<div class="relative w-1/3">
 		<div class="mt-16 flex h-[150px] w-full items-center gap-4">
 			<div class="w-[160px] overflow-hidden rounded-xl">
@@ -102,7 +102,7 @@
 				<p class="text-primary-text text-sm">Available for work</p>
 			</div>
 
-			<p class="text-[92px] leading-[92px] tracking-[-3.7px]">
+			<p class="text-[88px] leading-[92px] tracking-[-3.7px]">
 				Hi! I'm Ismail Muyideen, a Front-end Engineer turning your ideas into pixel-perfect
 				realities
 			</p>
