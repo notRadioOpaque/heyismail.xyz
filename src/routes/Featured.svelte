@@ -21,13 +21,13 @@
 
 	<div class="flex w-full flex-col border">
 		<div class="flex items-center">
-			<ProjectCard />
-			<ProjectCard />
+			<ProjectCard variant="dark" />
+			<ProjectCard variant="dark" />
 		</div>
 
 		<div class="flex h-full items-center">
-			<ProjectCard />
-			<ProjectCard />
+			<ProjectCard variant="dark" />
+			<ProjectCard variant="dark" />
 
 			<div class="h-[500px] w-full px-4">
 				<button

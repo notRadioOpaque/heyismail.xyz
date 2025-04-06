@@ -15,7 +15,7 @@
 			{/each}
 		</nav>
 
-		<div class="flex w-1/3 items-center gap-8">
+		<div class="flex w-1/3 items-center justify-end gap-8">
 			<div class="flex items-center gap-1.5">
 				<p class="text-subtext-text text-sm">Email:</p>
 

@@ -1,5 +1,6 @@
 <script>
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
+	import OtherProjetcs from '../../OtherProjetcs.svelte';
 </script>
 
 <div class="px-20 py-[80px]">
@@ -43,5 +44,9 @@
 				<img src="" alt="" />
 			</div>
 		</section>
+	</div>
+
+	<div class="mt-20">
+		<OtherProjetcs />
 	</div>
 </div>
