@@ -24,7 +24,7 @@
 					>hello@notradioopaque.dev</a
 				>
 			</div>
-			<Button label="Contact me" action={() => {}} />
+			<Button label="Get in touch" action={() => {}} />
 		</div>
 	</div>
 </header>
