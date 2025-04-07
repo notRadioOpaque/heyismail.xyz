@@ -7,10 +7,11 @@
 	<div class="flex w-full items-center justify-between">
 		<div class="w-1/3">Logo</div>
 
-		<nav class="flex w-1/3 gap-10">
+		<nav class="flex w-1/3 gap-6">
 			{#each NAV_LINKS as navLink}
-				<a href={navLink.path} class="hover:text-subtext-text text-lg font-medium transition-colors"
-					>{navLink.name}</a
+				<a
+					href={navLink.path}
+					class="hover:text-subtext-text text-base font-medium transition-colors">{navLink.name}</a
 				>
 			{/each}
 		</nav>
