@@ -6,9 +6,9 @@ interface Props {
 	year: number;
 }
 
-const username = 'notradioopaque';
+const username = 'notRadioOpaque';
 
-const GitHubContributionCalendar: React.FC<Props> = ({ year = 2023 }) => {
+const GitHubContributionCalendar: React.FC<Props> = ({ year }) => {
 	return React.createElement(
 		'div',
 		{ style: { maxWidth: '100%', overflowX: 'auto' } },

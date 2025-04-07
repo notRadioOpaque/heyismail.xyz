@@ -14,20 +14,29 @@
 	};
 </script>
 
-<section class="flex flex-col gap-40 px-20 py-[120px]">
-	<div class="flex h-[400px] flex-col gap-14">
-		<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">Contribution Graph</p>
+<section class="flex flex-col gap-28 px-20 py-[120px]">
+	<div class="flex flex-col gap-10">
+		<div class="flex flex-col gap-4">
+			<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">
+				Contribution Graph
+			</p>
+			<p class="text-subtext-text text-sm">{'dynamic...'}</p>
+		</div>
 
 		<div class="flex flex-col gap-4 xl:flex-row">
 			<div
-				class="dark:bg-primary-bg bg-secondary-bg max-h-fit max-w-fit rounded-lg border border-zinc-200 p-8 dark:border-zinc-800"
+				class="bg-primary-bg border-border-stroke-light max-h-fit max-w-fit rounded-lg border p-8"
 			>
 				<ReactCalendar year={calendarYear} />
 			</div>
 
 			<div class="flex flex-row flex-wrap justify-start gap-2 xl:flex-col">
 				{#each years as year}
-					<GraphButton {year} currentYear={year ?? thisYear} action={() => updateYear(year)} />
+					<GraphButton
+						{year}
+						currentYear={calendarYear ?? thisYear}
+						action={() => updateYear(year)}
+					/>
 				{/each}
 			</div>
 		</div>

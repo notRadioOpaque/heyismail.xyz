@@ -10,10 +10,10 @@
 
 <button
 	onclick={action}
-	class={`rounded-lg border border-transparent px-4 py-2 text-center text-sm font-medium duration-100 hover:border-zinc-200 dark:hover:border-zinc-700 ${
+	class={`border-border-stroke-light cursor-pointer rounded-lg border px-4 py-2 text-center text-sm duration-100 hover:border-zinc-200 ${
 		year === currentYear
-			? 'dark:bg-secondary-color bg-secondary-color text-white hover:border-transparent dark:text-zinc-800 dark:hover:border-transparent'
-			: 'dark:bg-primary-bg bg-zinc-50 text-zinc-800 dark:text-white'
+			? 'text-primary-text bg-white font-extrabold'
+			: 'bg-primary-bg text-secondary-text font-medium'
 	}`}
 	title={`View Graph for the year ${year}`}
 >

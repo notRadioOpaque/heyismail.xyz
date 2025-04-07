@@ -122,6 +122,6 @@ export const EXPERIENCES = [
 ];
 
 export const GRAPH_THEME = {
-	light: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
+	light: ['#ebedf0', '#a8d18d', '#76c75b', '#5ab93d', '#3d8c2e'],
 	dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353']
 };
