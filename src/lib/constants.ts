@@ -125,3 +125,10 @@ export const GRAPH_THEME = {
 	light: ['#ebedf0', '#a8d18d', '#76c75b', '#5ab93d', '#3d8c2e'],
 	dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353']
 };
+
+export const CONTRIBUTION_HIGHLIGHTS = {
+	2022: 'My GitHub journey begins! Still juggling vet school, so a humble 7 contributions. A quiet start, but the seed was planted! 🌱🐾',
+	2023: 'From a slow crawl to a steady pace. With 115 contributions, things are starting to pick up! 💻📈',
+	2024: 'Boom! I went all in! With 1095 contributions, it was a full throttle year, done with vet school! 🚀',
+	2025: "The year isn't even half over, and I've already hit 995 contributions! Let's see how far I can go this year! ⚡🔥"
+};

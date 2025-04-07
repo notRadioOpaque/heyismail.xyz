@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
-	import { EXPERIENCES } from '$lib/constants';
+	import { EXPERIENCES, CONTRIBUTION_HIGHLIGHTS } from '$lib/constants';
 	import ReactCalendar from '$lib/components/ReactCalendar.svelte';
 	import GraphButton from '$lib/components/GraphButton.svelte';
 
@@ -12,15 +12,21 @@
 	const updateYear = (y: number) => {
 		calendarYear = y;
 	};
+
+	const hightlight = $derived(
+		CONTRIBUTION_HIGHLIGHTS[calendarYear as keyof typeof CONTRIBUTION_HIGHLIGHTS]
+	);
 </script>
 
 <section class="flex flex-col gap-28 px-20 py-[120px]">
 	<div class="flex flex-col gap-10">
 		<div class="flex flex-col gap-4">
 			<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">
-				Contribution Graph
+				My Contribution Graph
 			</p>
-			<p class="text-subtext-text text-sm">{'dynamic...'}</p>
+			<p class="text-subtext-text text-sm font-medium">
+				{hightlight}
+			</p>
 		</div>
 
 		<div class="flex flex-col gap-4 xl:flex-row">
