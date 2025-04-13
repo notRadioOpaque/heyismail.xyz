@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { TECH_STACK, TOOLS, DEVELOPERS } from '$lib/constants';
 
-	let selected: any = null;
+	let selected: any = $state(null);
 </script>
 
 <div class="flex">
 	<div class="h-screen w-1/3 p-20">
-		<div class="flex w-[80%] flex-col items-center gap-4">
+		<div class="flex w-full flex-col items-center gap-4">
 			<div class="w-full overflow-hidden rounded-xl">
 				<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
 			</div>
@@ -183,12 +183,12 @@
 
 		<div class="my-12 flex flex-col gap-4">
 			<h3 class="text-[24px] leading-[33px] font-semibold tracking-[-1px]">The Inspo List</h3>
-			<p class="text-secondary-text text-[18px] leading-[28px] tracking-[-0.2px]">
+			<p class="text-secondary-text w-[90%] text-[18px] leading-[28px] tracking-[-0.2px]">
 				No cape, just code. These folks don’t just write software—they craft legacies. Each of them
 				has shaped how I think, build, and grow as a dev. No particular order, just massive respect.
 			</p>
 
-			<div class="mt-6 flex gap-4">
+			<div class="mt-8 flex gap-4">
 				<!-- Dev Buttons Grid -->
 				<div
 					class={`grid grid-cols-2 gap-3 transition-all duration-300 ${
@@ -197,8 +197,12 @@
 				>
 					{#each DEVELOPERS as dev}
 						<button
-							class="border-secondary-text rounded-lg border p-3 shadow"
-							on:click={() => {
+							class={`border-border-stroke-light hover:text-primary-text cursor-pointer rounded-lg border px-4 py-2 text-center text-sm duration-100 hover:border-zinc-200 hover:bg-white hover:font-bold ${
+								dev.id === selected?.id
+									? 'text-primary-text bg-white font-bold'
+									: 'bg-primary-bg text-secondary-text font-medium'
+							}`}
+							onclick={() => {
 								document.startViewTransition(() => {
 									selected = dev;
 								});
@@ -212,7 +216,7 @@
 				<!-- Detail Panel (conditionally rendered) -->
 				{#if selected}
 					<div
-						class="border-secondary-text flex w-full items-start justify-start rounded-lg border p-6 transition-all duration-300"
+						class="border-secondary-text borde flex w-full items-start justify-start rounded-lg p-6 transition-all duration-300"
 						data-view-transition-name="dev-panel"
 					>
 						<!-- Your selected dev details here -->
