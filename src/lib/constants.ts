@@ -251,3 +251,106 @@ export const TOOLS = [
 		icon: 'notion'
 	}
 ];
+
+export const DEVELOPERS = [
+	{
+		id: '1',
+		name: 'Theo Browne',
+		handle: '@t3dotgg',
+		image: '/devs/theo.png', // local or remote image
+		title: 'Founder of Ping.gg',
+		reason:
+			'For pioneering tRPC and pushing the boundaries of full-stack TypeScript. His approach to building and teaching is direct and refreshing.',
+		tags: ['TypeScript', 'tRPC', 'Builder']
+	},
+	{
+		id: '2',
+		name: 'Lee Robinson',
+		handle: '@leeerob',
+		image: '/devs/lee.png',
+		title: 'VP of DevRel at Vercel',
+		reason:
+			'For making frontend tools and workflows (like Next.js) more accessible to developers. His content and leadership inspire clarity in building UI.',
+		tags: ['Next.js', 'DX', 'Leadership']
+	},
+	{
+		id: '3',
+		name: 'Cassidy Williams',
+		handle: '@cassidoo',
+		image: '/devs/cassidy.png',
+		title: 'CTO at Contenda',
+		reason:
+			'For making dev education fun, approachable, and inclusive. Her memes and talks make learning joyful.',
+		tags: ['Education', 'Content', 'JS']
+	},
+	{
+		id: '4',
+		name: 'Dan Abramov',
+		handle: '@dan_abramov',
+		image: '/devs/dan.png',
+		title: 'Co-author of Redux, React Core Team',
+		reason:
+			"For shaping the mental models of state management and React's internals. His blog posts are like dev therapy.",
+		tags: ['React', 'State', 'Architecture']
+	},
+	{
+		id: '5',
+		name: 'Sunil Pai',
+		handle: '@threepointone',
+		image: '/devs/sunil.png',
+		title: 'Engineer & Creator',
+		reason:
+			'For influencing how we think about React, performance, and the web. Always questioning norms in creative ways.',
+		tags: ['React', 'Performance', 'Web APIs']
+	},
+	{
+		id: '6',
+		name: 'Theo Browne',
+		handle: '@t3dotgg',
+		image: '/devs/theo.png', // local or remote image
+		title: 'Founder of Ping.gg',
+		reason:
+			'For pioneering tRPC and pushing the boundaries of full-stack TypeScript. His approach to building and teaching is direct and refreshing.',
+		tags: ['TypeScript', 'tRPC', 'Builder']
+	},
+	{
+		id: '7',
+		name: 'Lee Robinson',
+		handle: '@leeerob',
+		image: '/devs/lee.png',
+		title: 'VP of DevRel at Vercel',
+		reason:
+			'For making frontend tools and workflows (like Next.js) more accessible to developers. His content and leadership inspire clarity in building UI.',
+		tags: ['Next.js', 'DX', 'Leadership']
+	},
+	{
+		id: '8',
+		name: 'Cassidy Williams',
+		handle: '@cassidoo',
+		image: '/devs/cassidy.png',
+		title: 'CTO at Contenda',
+		reason:
+			'For making dev education fun, approachable, and inclusive. Her memes and talks make learning joyful.',
+		tags: ['Education', 'Content', 'JS']
+	},
+	{
+		id: '9',
+		name: 'Dan Abramov',
+		handle: '@dan_abramov',
+		image: '/devs/dan.png',
+		title: 'Co-author of Redux, React Core Team',
+		reason:
+			"For shaping the mental models of state management and React's internals. His blog posts are like dev therapy.",
+		tags: ['React', 'State', 'Architecture']
+	},
+	{
+		id: '10',
+		name: 'Sunil Pai',
+		handle: '@threepointone',
+		image: '/devs/sunil.png',
+		title: 'Engineer & Creator',
+		reason:
+			'For influencing how we think about React, performance, and the web. Always questioning norms in creative ways.',
+		tags: ['React', 'Performance', 'Web APIs']
+	}
+];
