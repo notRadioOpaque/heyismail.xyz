@@ -1,3 +1,7 @@
+<script>
+	import { TECH_STACK, TOOLS } from '$lib/constants';
+</script>
+
 <div class="flex">
 	<div class="h-screen w-1/3 p-20">
 		<div class="flex w-[80%] flex-col items-center gap-4">
@@ -119,6 +123,56 @@
 				Technologies, platforms, and gadgets I use regularly as a frontend developer — from React to
 				Twitch, from Figma to my trusty MacBook.
 			</p>
+		</div>
+
+		<div class="mt-6 flex w-full flex-col gap-8">
+			<div class="flex w-full flex-col gap-4">
+				<h3 class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]">
+					Tech Stack
+				</h3>
+
+				<ul class="flex flex-col gap-3">
+					{#each TECH_STACK as { name, url, description }}
+						<li class="flex items-center gap-3">
+							<div class="bg-tertiary-bg h-5 w-5"></div>
+							<a
+								href={url}
+								class="text-tertiary-text text-[18px] leading-[28px] tracking-[-0.4px] break-words whitespace-normal underline"
+								>{name}</a
+							>
+							<p
+								class="text-secondary-text text-[18px] leading-[28px] tracking-[-0.2px] break-words whitespace-normal"
+							>
+								- {description}
+							</p>
+						</li>
+					{/each}
+				</ul>
+			</div>
+
+			<div class="flex w-full flex-col gap-4">
+				<h3 class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]">
+					Tech Stack
+				</h3>
+
+				<ul class="flex flex-col gap-3">
+					{#each TOOLS as { name, url, description }}
+						<li class="flex items-center gap-3">
+							<div class="bg-tertiary-bg h-5 w-5"></div>
+							<a
+								href={url}
+								class="text-tertiary-text text-[18px] leading-[28px] tracking-[-0.4px] break-words whitespace-normal underline"
+								>{name}</a
+							>
+							<p
+								class="text-secondary-text text-[18px] leading-[28px] tracking-[-0.2px] break-words whitespace-normal"
+							>
+								- {description}
+							</p>
+						</li>
+					{/each}
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
