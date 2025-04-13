@@ -193,3 +193,61 @@ export const TECH_STACK = [
 		icon: 'python'
 	}
 ];
+
+// Tools
+export const TOOLS = [
+	{
+		name: 'Visual Studio Code',
+		url: 'https://code.visualstudio.com/',
+		description: 'Text Editor',
+		icon: 'vscode'
+	},
+	{
+		name: 'Postman',
+		url: 'https://www.postman.com/',
+		description: 'API Testing',
+		icon: 'postman'
+	},
+	{
+		name: 'Hoppscotch',
+		url: 'https://hoppscotch.io/',
+		description: 'API Testing/Development',
+		icon: 'hoppscotch'
+	},
+	{
+		name: 'Firefox',
+		url: 'https://www.mozilla.org/firefox/',
+		description: 'Web Browser',
+		icon: 'firefox'
+	},
+	{
+		name: 'Google Chrome',
+		url: 'https://www.google.com/chrome/',
+		description: 'Web Browser',
+		icon: 'chrome'
+	},
+	{
+		name: 'Figma',
+		url: 'https://www.figma.com/',
+		description: 'Design Tool',
+		icon: 'figma'
+	},
+	{
+		name: 'Microsoft Todo',
+		url: 'https://todo.microsoft.com/',
+		description: 'Todo / Task Management',
+		icon: 'todo'
+	},
+	{
+		name: 'Git Bash',
+		url: 'https://git-scm.com/downloads',
+		description: 'Git Terminal',
+		icon: 'gitbash'
+	},
+	{
+		name: 'Notion',
+		url: 'https://www.notion.so/',
+		description: 'Note taking and organization',
+		icon: 'notion'
+	}
+];
