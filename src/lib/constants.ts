@@ -34,9 +34,6 @@ export const NAV_LINKS = [
 	{ name: 'Projects', path: '/projects' }
 ];
 
-// Tech stack
-export const TECH_STACK = ['Svelte', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Node.js'];
-
 // Projects (for displaying portfolio items)
 export const PROJECTS = [
 	{
@@ -132,3 +129,67 @@ export const CONTRIBUTION_HIGHLIGHTS = {
 	2024: 'Boom! I went all in! With 1095 contributions, it was a full throttle year, done with vet school! 🚀',
 	2025: "The year isn't even half over! Let's see how far I can go this year! ⚡🔥"
 };
+
+// Tech stack
+export const TECH_STACK = [
+	{
+		name: 'React',
+		url: 'https://reactjs.org',
+		description: 'UI Library',
+		icon: 'react'
+	},
+	{
+		name: 'Next.js',
+		url: 'https://nextjs.org',
+		description: 'React Framework',
+		icon: 'nextjs'
+	},
+	{
+		name: 'Redux',
+		url: 'https://redux.js.org',
+		description: 'Production-grade State Management',
+		icon: 'redux'
+	},
+	{
+		name: 'Zustand',
+		url: 'https://zustand-demo.pmnd.rs/',
+		description: 'State Management (personal preference)',
+		icon: 'zustand'
+	},
+	{
+		name: 'Sanity',
+		url: 'https://www.sanity.io',
+		description: 'Headless CMS',
+		icon: 'sanity'
+	},
+	{
+		name: 'Tailwind CSS',
+		url: 'https://tailwindcss.com',
+		description: 'Styling Library',
+		icon: 'tailwind'
+	},
+	{
+		name: 'TypeScript',
+		url: 'https://www.typescriptlang.org',
+		description: 'Typed Superset of JavaScript',
+		icon: 'typescript'
+	},
+	{
+		name: 'Sass',
+		url: 'https://sass-lang.com',
+		description: 'CSS Preprocessor',
+		icon: 'sass'
+	},
+	{
+		name: 'VitePress',
+		url: 'https://vitepress.dev',
+		description: 'Static Site Generator',
+		icon: 'vitepress'
+	},
+	{
+		name: 'Python',
+		url: 'https://www.python.org',
+		description: 'Programming Language',
+		icon: 'python'
+	}
+];
