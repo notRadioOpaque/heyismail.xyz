@@ -7,6 +7,7 @@
 	--color-primary-bg: #f7f7f7;
 	--color-secondary-bg: #121212;
 	--color-tertiary-bg: #8cff2e;
+	/* --color-tertiary-bg: #3d8c2e; */
 	--color-btn-bg: #2e2e2e;
 	--color-btn-hover-bg: #8cff2e;
 	--color-border-stroke: #292929;
@@ -18,7 +19,8 @@
 	/* Text Colors */
 	--color-primary-text: #2f2f2f;
 	--color-secondary-text: #7d7d7d;
-	--color-tertiary-text: #8cff2e;
+	/* --color-tertiary-text: #8cff2e; */
+	--color-tertiary-text: #3d8c2e;
 	--color-subtext-text: #878787;
 }
 
