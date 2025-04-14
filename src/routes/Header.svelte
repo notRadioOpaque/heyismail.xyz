@@ -1,6 +1,15 @@
 <script lang="ts">
 	import { Button } from '$lib/components';
 	import { NAV_LINKS } from '$lib/constants';
+	import { page } from '$app/state';
+
+	let currentPath: string = $state('');
+
+	$effect(() => {
+		currentPath = page.url.pathname;
+	});
+
+	const isActive = (path: string) => currentPath.startsWith(path);
 </script>
 
 <header class="border-border-stroke-light flex items-center justify-between border-b px-20 py-8">
@@ -9,10 +18,16 @@
 
 		<nav class="flex w-1/3 gap-6">
 			{#each NAV_LINKS as navLink}
-				<a
-					href={navLink.path}
-					class="hover:text-subtext-text text-base font-medium transition-colors">{navLink.name}</a
-				>
+				<div class="relative">
+					<a
+						href={navLink.path}
+						class="hover:text-subtext-text text-sm font-medium transition-colors">{navLink.name}</a
+					>
+
+					<div
+						class={`bg-secondary-bg absolute bottom-[-10px] left-1/2 h-1 w-1 -translate-x-1/2 rounded-full transition-all ${isActive(navLink.path) ? 'block' : 'hidden'}`}
+					></div>
+				</div>
 			{/each}
 		</nav>
 
