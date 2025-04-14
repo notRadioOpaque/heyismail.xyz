@@ -189,7 +189,6 @@
 			</p>
 
 			<div class="mt-8 flex gap-4">
-				<!-- Dev Buttons Grid -->
 				<div
 					class={`grid grid-cols-2 gap-3 transition-all duration-300 ${
 						selected ? 'w-[600px]' : 'w-full grid-cols-3'
@@ -213,13 +212,11 @@
 					{/each}
 				</div>
 
-				<!-- Detail Panel (conditionally rendered) -->
 				{#if selected}
 					<div
-						class="border-secondary-text borde flex w-full items-start justify-start rounded-lg p-6 transition-all duration-300"
+						class="flex w-full items-start justify-start rounded-lg p-4 transition-all duration-300"
 						data-view-transition-name="dev-panel"
 					>
-						<!-- Your selected dev details here -->
 						<div class="space-y-2">
 							<h4 class="text-xl font-semibold">{selected.name}</h4>
 							<p class="text-sm text-gray-500">{selected.title}</p>
