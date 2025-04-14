@@ -60,8 +60,6 @@
 				</p>
 			</div>
 
-			<div>quote goes here!</div>
-
 			<div class="my-6 flex flex-col gap-4">
 				<h3 class="text-[24px] leading-[33px] font-semibold tracking-[-1px]">Soft Skills</h3>
 				<p class="text-secondary-text text-[18px] leading-[28px] tracking-[-0.2px]">
