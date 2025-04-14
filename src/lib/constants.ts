@@ -31,7 +31,8 @@ export const SOCIALS = [
 export const NAV_LINKS = [
 	{ name: 'About', path: '/about' },
 	{ name: 'Experience', path: '/experience' },
-	{ name: 'Projects', path: '/projects' }
+	{ name: 'Projects', path: '/projects' },
+	{ name: 'Blog', path: '/blog' }
 ];
 
 // Projects (for displaying portfolio items)
