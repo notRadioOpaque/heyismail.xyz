@@ -1,13 +1,15 @@
 <script>
 	import { Dot, ProjectCard } from '$lib/components';
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
+
+	const pageTitle = '{> Featured Projects <}';
 </script>
 
 <section class="bg-secondary-bg flex flex-col gap-24 px-20 py-[160px]">
 	<div class="flex flex-col gap-4">
-		<div class="flex items-center gap-2">
+		<div class="flex items-center gap-3">
 			<Dot size="md" />
-			<p class="text-subtext-text text-lg font-medium">/01/ -- Featured Projects</p>
+			<p class="text-subtext-text text-lg font-medium">{@html pageTitle}</p>
 		</div>
 
 		<p class="w-[70%] text-[90px] leading-[99px] tracking-[-3.6px] text-white">
