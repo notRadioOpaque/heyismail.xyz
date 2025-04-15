@@ -3,36 +3,71 @@
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
+	import SplitType from 'split-type';
 
 	let imageDiv: HTMLDivElement;
 	let rightContent: HTMLDivElement;
+	let heroText: HTMLHeadingElement;
+	let asideText: HTMLParagraphElement;
+	let subText: HTMLDivElement;
+	let gimmick: HTMLDivElement;
 
 	onMount(() => {
+		const splitText = new SplitType(heroText, { types: 'chars,words,lines' });
+
 		const tl = gsap.timeline();
 
-		// Animate image in
 		tl.from(imageDiv, {
 			y: 100,
 			opacity: 0,
-			duration: 1.2,
+			duration: 0.6,
 			ease: 'power4.out'
 		});
 
-		// Then slide in the right content from beneath
+		tl.from(splitText.lines, {
+			y: 40,
+			opacity: 0,
+			stagger: 0.2,
+			duration: 0.8,
+			ease: 'power4.out'
+		});
+
 		tl.from(
 			rightContent,
 			{
 				x: -100,
 				opacity: 0,
-				duration: 1,
+				duration: 0.6,
 				ease: 'power4.out'
 			},
-			'-=0.4' // slight overlap for smooth flow
+			'-=0.2'
+		);
+
+		tl.from(
+			gimmick,
+			{
+				x: 100,
+				opacity: 0,
+				duration: 0.6,
+				ease: 'power4.out'
+			},
+			'-=0.2'
+		);
+
+		tl.from(
+			[asideText, subText],
+			{
+				y: 100,
+				opacity: 0,
+				duration: 0.6,
+				ease: 'power4.out'
+			},
+			'-=0.2'
 		);
 	});
 </script>
 
-<section class="flex px-20 py-[160px]">
+<section class="flex px-20 py-[120px]">
 	<div class="relative w-1/3">
 		<div class="mt-16 flex h-[150px] w-full items-center gap-4">
 			<div bind:this={imageDiv} class="opacity- relative z-20 w-[160px] overflow-hidden rounded-xl">
@@ -119,25 +154,28 @@
 			</div>
 		</div>
 
-		<p class="absolute bottom-[195px] text-[20px] leading-[28px] font-medium tracking-[-0.8px]">
+		<p
+			bind:this={asideText}
+			class="absolute bottom-[195px] text-[20px] leading-[28px] font-medium tracking-[-0.8px]"
+		>
 			(2023 - PRESENT)
 		</p>
 	</div>
 
 	<div class="flex w-2/3 flex-col gap-[70px]">
 		<div class="flex flex-col gap-8">
-			<div class="flex items-center gap-2">
+			<div bind:this={gimmick} class="flex items-center gap-2">
 				<Dot size="sm" />
 				<p class="text-primary-text text-sm">Available for work</p>
 			</div>
 
-			<p class="text-[88px] leading-[92px] tracking-[-3.7px]">
+			<h1 bind:this={heroText} class="text-[88px] leading-[92px] tracking-[-3.7px]">
 				Hi! I'm Ismail Muyideen, a Front-end Engineer turning your ideas into pixel-perfect
 				realities
-			</p>
+			</h1>
 		</div>
 
-		<div class="flex flex-col gap-24">
+		<div bind:this={subText} class="flex flex-col gap-24">
 			<p class="text-2xl leading-[36px] font-medium tracking-[-1px] text-[#6b6b6b]">
 				I’m dedicated to crafting websites that bring your ideas to life, combining design and
 				development to deliver fast, impactful results.
