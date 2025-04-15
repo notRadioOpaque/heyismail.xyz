@@ -1,16 +1,45 @@
-<script>
+<script lang="ts">
 	import { Dot } from '$lib/components';
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
+
+	let imageDiv: HTMLDivElement;
+	let rightContent: HTMLDivElement;
+
+	onMount(() => {
+		const tl = gsap.timeline();
+
+		// Animate image in
+		tl.from(imageDiv, {
+			y: 100,
+			opacity: 0,
+			duration: 1.2,
+			ease: 'power4.out'
+		});
+
+		// Then slide in the right content from beneath
+		tl.from(
+			rightContent,
+			{
+				x: -100,
+				opacity: 0,
+				duration: 1,
+				ease: 'power4.out'
+			},
+			'-=0.4' // slight overlap for smooth flow
+		);
+	});
 </script>
 
 <section class="flex px-20 py-[160px]">
 	<div class="relative w-1/3">
 		<div class="mt-16 flex h-[150px] w-full items-center gap-4">
-			<div class="w-[160px] overflow-hidden rounded-xl">
+			<div bind:this={imageDiv} class="opacity- relative z-20 w-[160px] overflow-hidden rounded-xl">
 				<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
 			</div>
 
-			<div class="flex flex-col">
+			<div bind:this={rightContent} class="relative z-10 flex flex-col">
 				<p class="text-[22px] leading-[30.8px] font-medium tracking-[-0.9px]">Ismail Muyideen</p>
 				<p class="text-subtext-text text-[15px] leading-[19.5px] font-medium tracking-[-0.6px]">
 					Front-end Engineer
