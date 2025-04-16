@@ -14,11 +14,17 @@
 		</p>
 	</div>
 
-	<div class="flex w-full flex-col border">
-		<div class="flex h-full items-center">
-			<ProjectCard variant="light" />
-			<ProjectCard variant="light" />
-			<ProjectCard variant="light" />
+	<div class="flex w-full">
+		<div class="border-border-stroke-light w-full border border-r-0">
+			<ProjectCard variant="light" imgHeight={'350'} />
+		</div>
+
+		<div class="border-border-stroke-light w-full border border-r-0">
+			<ProjectCard variant="light" imgHeight={'350'} />
+		</div>
+
+		<div class="border-border-stroke-light w-full border">
+			<ProjectCard variant="light" imgHeight={'350'} />
 		</div>
 	</div>
 </section>

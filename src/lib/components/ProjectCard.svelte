@@ -13,7 +13,7 @@
 </script>
 
 <button
-	class="w-full cursor-pointer px-[22px] pt-[70px] pb-[22px] transition-all hover:bg-[#181818]"
+	class={`w-full cursor-pointer px-[22px] pt-[70px] pb-[22px] transition-all ${variant === 'light' ? 'hover:bg-[#f0f0f0]' : 'hover:bg-[#181818]'}`}
 	onclick={() => navigate('/projects/test')}
 >
 	<div class="mb-[50px] ml-6 flex flex-col gap-3">
@@ -38,10 +38,7 @@
 		</p>
 	</div>
 
-	<div
-		style={`height: ${imgHeight}px`}
-		class=" w-full overflow-hidden rounded-[10px] border bg-white"
-	>
+	<div style={`height: ${imgHeight}px`} class=" w-full overflow-hidden rounded-[10px] bg-[#3d8c2e]">
 		<img class="block h-full w-full object-cover" src="" alt="a cat" />
 	</div>
 </button>
