@@ -1,8 +1,34 @@
-<script>
+<script lang="ts">
 	import { Dot, SpecialBtn } from '$lib/components';
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
+	import SplitType from 'split-type';
+
+	let footer: any;
+	let heroText: HTMLHeadingElement;
+
+	onMount(() => {
+		const splitText = new SplitType(heroText, { types: 'chars,words,lines' });
+
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: footer,
+				start: '-50% top',
+				end: 'bottom center'
+			}
+		});
+
+		tl.from(splitText.lines, {
+			y: 40,
+			opacity: 0,
+			stagger: 0.2,
+			duration: 0.8,
+			ease: 'power4.out'
+		});
+	});
 </script>
 
-<footer class="bg-secondary-bg">
+<footer bind:this={footer} class="bg-secondary-bg">
 	<div class="flex items-center justify-between px-20 py-8">
 		<div class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -20,7 +46,7 @@
 
 	<div class="border-border-stroke flex h-[795px] items-center justify-center border-y px-20">
 		<div class="flex w-1/2 flex-col gap-10">
-			<h2 class="text-[96px] leading-[96px] tracking-[-4.8px] text-white">
+			<h2 bind:this={heroText} class="text-[96px] leading-[96px] tracking-[-4.8px] text-white">
 				Let's create something extraordinary together<span class="text-tertiary-text">.</span>
 			</h2>
 			<p class="text-subtext-text text-2xl">Let’s make an impact</p>
