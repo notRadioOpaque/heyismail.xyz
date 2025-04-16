@@ -1,22 +1,52 @@
-<script>
+<script lang="ts">
 	import { Dot, ProjectCard } from '$lib/components';
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	import { onMount } from 'svelte';
 
 	const pageTitle = '{> Featured Projects <}';
+
+	let section: any;
+	let title: HTMLDivElement;
+	let description: HTMLDivElement;
+	let button: HTMLHeadingElement;
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		const tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: section,
+				start: '-20% top',
+				end: 'bottom center'
+			}
+		});
+
+		tl.from([title, description, button], {
+			y: 50,
+			opacity: 0,
+			duration: 0.5,
+			ease: 'power4.out'
+		});
+	});
 </script>
 
-<section class="bg-secondary-bg flex flex-col gap-24 px-20 py-[160px]">
+<section bind:this={section} class="bg-secondary-bg section flex flex-col gap-24 px-20 py-[160px]">
 	<div class="flex flex-col gap-4">
-		<div class="flex items-center gap-3">
+		<div bind:this={title} class="flex items-center gap-3">
 			<Dot size="md" />
 			<p class="text-subtext-text text-lg font-medium">{@html pageTitle}</p>
 		</div>
 
-		<p class="w-[70%] text-[90px] leading-[99px] tracking-[-3.6px] text-white">
+		<p
+			bind:this={description}
+			class="w-[70%] text-[90px] leading-[99px] tracking-[-3.6px] text-white"
+		>
 			I blend creativity with technical expertise
 		</p>
 
-		<div class="mt-24">
+		<div bind:this={button} class="mt-24">
 			<SpecialBtn label="Become a client" action={() => {}} />
 		</div>
 	</div>
