@@ -51,19 +51,27 @@
 		</div>
 	</div>
 
-	<div class="flex w-full flex-col border">
-		<div class="flex items-center">
-			<ProjectCard variant="dark" />
-			<ProjectCard variant="dark" />
+	<div class="flex w-full flex-col">
+		<div class="flex items-center border-white">
+			<div class="border-border-stroke w-full border border-r-0">
+				<ProjectCard imgHeight={'460'} />
+			</div>
+			<div class="border-border-stroke w-full border">
+				<ProjectCard imgHeight={'460'} />
+			</div>
 		</div>
 
 		<div class="flex h-full items-center">
-			<ProjectCard variant="dark" />
-			<ProjectCard variant="dark" />
+			<div class="border-border-stroke w-full border border-t-0 border-r-0">
+				<ProjectCard imgHeight={'350'} />
+			</div>
+			<div class="border-border-stroke w-full border border-t-0">
+				<ProjectCard imgHeight={'350'} />
+			</div>
 
-			<div class="h-[500px] w-full px-4">
+			<div class="h-[500px] w-[100%] px-[35px]">
 				<button
-					class="group bg-tertiary-bg flex h-full w-full items-center justify-center rounded-[10px] border transition-all hover:rounded-none"
+					class="group hover:bg-tertiary-bg flex h-full w-full cursor-pointer items-center justify-center rounded-[10px] bg-[#3d8c2e] transition-all hover:scale-[110%]"
 				>
 					<p>View all projects</p>
 
