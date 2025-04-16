@@ -4,6 +4,7 @@
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	const pageTitle = '{> Featured Projects <}';
 
@@ -30,6 +31,10 @@
 			ease: 'power4.out'
 		});
 	});
+
+	function navigate(route: string) {
+		goto(route);
+	}
 </script>
 
 <section bind:this={section} class="bg-secondary-bg section flex flex-col gap-24 px-20 py-[160px]">
@@ -72,6 +77,7 @@
 			<div class="h-[500px] w-[100%] px-[35px]">
 				<button
 					class="group hover:bg-tertiary-bg flex h-full w-full cursor-pointer items-center justify-center rounded-[10px] bg-[#3d8c2e] transition-all hover:scale-[110%]"
+					onclick={() => navigate('/projects')}
 				>
 					<p>View all projects</p>
 

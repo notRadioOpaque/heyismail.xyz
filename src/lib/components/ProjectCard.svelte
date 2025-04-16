@@ -1,13 +1,21 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	interface PropType {
 		variant?: 'light' | 'dark';
 		imgHeight: string;
 	}
 
 	let { variant = 'dark', imgHeight }: PropType = $props();
+
+	function navigate(route: string) {
+		goto(route);
+	}
 </script>
 
-<div class="w-full cursor-pointer px-[22px] pt-[70px] pb-[22px] transition-all hover:bg-[#181818]">
+<button
+	class="w-full cursor-pointer px-[22px] pt-[70px] pb-[22px] transition-all hover:bg-[#181818]"
+	onclick={() => navigate('/projects/test')}
+>
 	<div class="mb-[50px] ml-6 flex flex-col gap-3">
 		<div class="flex items-center gap-3">
 			<p
@@ -20,12 +28,12 @@
 		</div>
 
 		<p
-			class={`text-[30px] leading-[36px] tracking-[-1.2px] ${variant === 'light' ? 'text-primary-text' : 'text-white'}`}
+			class={`text-start text-[30px] leading-[36px] tracking-[-1.2px] ${variant === 'light' ? 'text-primary-text' : 'text-white'}`}
 		>
 			SilverLynx Technologies
 		</p>
 
-		<p class="text-subtext-text text-base leading-[19.5px] tracking-[-0.6px]">
+		<p class="text-subtext-text text-start text-base leading-[19.5px] tracking-[-0.6px]">
 			Web Design and Web Development
 		</p>
 	</div>
@@ -36,4 +44,4 @@
 	>
 		<img class="block h-full w-full object-cover" src="" alt="a cat" />
 	</div>
-</div>
+</button>
