@@ -35,3 +35,7 @@
 * {
 	font-family: var(--font-manrope);
 }
+
+html {
+	scroll-behavior: smooth;
+}
