@@ -1,10 +1,27 @@
-<script>
+<script lang="ts">
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 	import OtherProjetcs from '../../OtherProjetcs.svelte';
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
+
+	let heroText: HTMLParagraphElement;
+
+	onMount(() => {
+		const tl = gsap.timeline();
+
+		tl.from([heroText], {
+			y: 100,
+			opacity: 0,
+			duration: 0.6,
+			ease: 'power4.out'
+		});
+	});
 </script>
 
 <div class="px-20 py-[80px]">
-	<p class="text-[86px] leading-[90px] tracking-[-3.4px]">EchoStream Entertainment</p>
+	<p bind:this={heroText} class="text-[86px] leading-[90px] tracking-[-3.4px]">
+		EchoStream Entertainment
+	</p>
 
 	<div class="mt-20 flex justify-between">
 		<aside class="w-[40%]">
