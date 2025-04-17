@@ -3,6 +3,9 @@
 	import { EXPERIENCES, CONTRIBUTION_HIGHLIGHTS } from '$lib/constants';
 	import ReactCalendar from '$lib/components/ReactCalendar.svelte';
 	import GraphButton from '$lib/components/GraphButton.svelte';
+	import Dot from '$lib/components/Dot.svelte';
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
 
 	const thisYear = new Date().getFullYear();
 	const years = Array.from({ length: thisYear - 2022 + 1 }, (_, i) => thisYear - i);
@@ -16,13 +19,53 @@
 	const hightlight = $derived(
 		CONTRIBUTION_HIGHLIGHTS[calendarYear as keyof typeof CONTRIBUTION_HIGHLIGHTS]
 	);
+
+	let heroText: HTMLHeadingElement;
+	let subText: HTMLDivElement;
+	let graph: HTMLDivElement;
+
+	onMount(() => {
+		const tl = gsap.timeline();
+
+		tl.from([heroText, subText], {
+			y: 100,
+			opacity: 0,
+			duration: 0.6,
+			ease: 'power4.out'
+		});
+
+		tl.from(
+			graph,
+			{
+				y: 100,
+				opacity: 0,
+				duration: 0.6,
+				ease: 'power4.out'
+			},
+			'-=0.2'
+		);
+	});
 </script>
 
-<section class="flex flex-col gap-28 px-20 py-[120px]">
-	<div class="flex flex-col gap-10">
+<section class="flex flex-col gap-28 px-20 py-[70px]">
+	<div class="flex flex-col items-center justify-center gap-5">
+		<div bind:this={subText} class="flex items-center gap-2">
+			<Dot size="md" />
+			<p class="text-subtext-text text-lg font-medium">Hands-On Highlights</p>
+		</div>
+
+		<p
+			bind:this={heroText}
+			class="text-primary-text text-center text-[90px] leading-[99px] tracking-[-3.6px]"
+		>
+			My Experience
+		</p>
+	</div>
+
+	<div bind:this={graph} class="flex flex-col gap-10">
 		<div class="flex flex-col gap-4">
 			<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">
-				My Contribution Graph
+				Contribution Graph
 			</p>
 			<p class="text-subtext-text text-sm font-medium">
 				{hightlight}
