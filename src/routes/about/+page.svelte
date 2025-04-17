@@ -34,10 +34,10 @@
 </script>
 
 <div class="flex w-full flex-col gap-16 py-[70px]">
-	<div class="flex flex-col items-center justify-center gap-5">
+	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
-			<Dot size="md" />
-			<p class="text-subtext-text text-lg font-medium">Bits of Me</p>
+			<Dot size="sm" />
+			<p class="text-subtext-text text-sm font-medium">Bits of Me</p>
 		</div>
 
 		<p
@@ -104,7 +104,7 @@
 					</p>
 				</div>
 
-				<div class="my-12 flex flex-col gap-4">
+				<div class="mt-20 mb-12 flex flex-col gap-4">
 					<h3 class="text-[24px] leading-[33px] font-semibold tracking-[-1px]">Soft Skills</h3>
 					<p class="text-secondary-text text-[18px] leading-[28px] tracking-[-0.2px]">
 						Certain skills I've picked along the way that deserves mentioning:

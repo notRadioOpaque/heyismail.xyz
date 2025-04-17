@@ -20,10 +20,10 @@
 </script>
 
 <div class="flex h-[750px] w-full flex-col gap-28 px-20 py-[70px]">
-	<div class="flex flex-col items-center justify-center gap-5">
+	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
-			<Dot size="md" />
-			<p class="text-subtext-text text-lg font-medium">Brain Dump</p>
+			<Dot size="sm" />
+			<p class="text-subtext-text text-sm font-medium">Brain Dump</p>
 		</div>
 
 		<p
