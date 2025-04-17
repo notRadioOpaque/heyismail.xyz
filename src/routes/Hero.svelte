@@ -67,7 +67,7 @@
 	});
 </script>
 
-<section class="flex px-20 py-[120px]">
+<section class="flex overflow-x-hidden px-20 py-[120px]">
 	<div class="relative w-1/3">
 		<div class="mt-16 flex h-[150px] w-full items-center gap-4">
 			<div bind:this={imageDiv} class="opacity- relative z-20 w-[160px] overflow-hidden rounded-xl">

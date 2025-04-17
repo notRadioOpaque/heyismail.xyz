@@ -9,7 +9,9 @@
 
 <Header />
 
-{@render children()}
+<main class="">
+	{@render children()}
+</main>
 
 <ScrollToTopButton />
 
