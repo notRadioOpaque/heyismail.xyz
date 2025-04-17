@@ -39,11 +39,11 @@
 	};
 </script>
 
-<section class="p-[100px]">
+<section class="p-[70px]">
 	<div class="flex flex-col items-center justify-center gap-5">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="md" />
-			<p class="text-subtext-text text-lg font-medium">My recent projects</p>
+			<p class="text-subtext-text text-lg font-medium">Featured Deliverables</p>
 		</div>
 
 		<p
