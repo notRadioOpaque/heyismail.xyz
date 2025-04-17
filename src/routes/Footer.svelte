@@ -13,7 +13,7 @@
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: footer,
-				start: '-50% top',
+				start: '-30% top',
 				end: 'bottom center'
 			}
 		});
@@ -26,6 +26,10 @@
 			ease: 'power4.out'
 		});
 	});
+
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
 </script>
 
 <footer bind:this={footer} class="bg-secondary-bg">
@@ -35,13 +39,18 @@
 			<p class="text-sm text-white">Available for work</p>
 		</div>
 
-		<div class="flex items-center gap-3">
-			<p class="text-subtext-text text-sm">Back to top</p>
+		<button
+			onclick={scrollToTop}
+			class="group flex cursor-pointer items-center gap-3 transition-all"
+		>
+			<p class="text-subtext-text text-sm transition-all group-hover:underline">Back to top</p>
 
-			<div class="flex h-11 w-11 items-center justify-center rounded-full bg-white">
+			<div
+				class="flex h-11 w-11 items-center justify-center rounded-full bg-white transition-all group-hover:rotate-45"
+			>
 				<img class="mx-2" src="/icons/arrow_up.svg" alt="svelte icon" width="24" height="24" />
 			</div>
-		</div>
+		</button>
 	</div>
 
 	<div class="border-border-stroke flex h-[795px] items-center justify-center border-y px-20">
