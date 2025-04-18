@@ -170,8 +170,8 @@
 			</div>
 
 			<h1 bind:this={heroText} class="text-[88px] leading-[92px] tracking-[-3.7px]">
-				Hi! I'm Ismail Muyideen, a Front-end Engineer turning your ideas into pixel-perfect
-				realities
+				Hi! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>, a Front-end Engineer turning
+				your ideas into pixel-perfect realities
 			</h1>
 		</div>
 
