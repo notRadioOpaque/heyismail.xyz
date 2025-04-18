@@ -9,7 +9,7 @@
 
 <Header />
 
-<main class="">
+<main class="3xl:max-w-screen-3xl mx-auto w-full 2xl:max-w-screen-2xl">
 	{@render children()}
 </main>
 

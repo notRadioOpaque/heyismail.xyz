@@ -33,5 +33,5 @@
 			Blogs
 		</p>
 	</div>
-	<h1 class="mx-auto text-[20px]">Coming soon! 🚀</h1>
+	<h1 class="mx-auto text-[20px]">Still cooking! 👨‍🍳</h1>
 </div>

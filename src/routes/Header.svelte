@@ -13,7 +13,9 @@
 </script>
 
 <header class="border-border-stroke-light flex items-center justify-between border-b px-20 py-8">
-	<div class="flex w-full items-center justify-between">
+	<div
+		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between 2xl:max-w-screen-2xl"
+	>
 		<div class="w-1/3">Logo</div>
 
 		<nav class="flex w-1/3 gap-6">
