@@ -47,7 +47,7 @@
 	<button
 		bind:this={btn}
 		onclick={scrollToTop}
-		class="group bg-tertiary-bg fixed right-10 bottom-10 z-50 flex cursor-pointer items-center rounded-full px-1 py-1 transition-all duration-500 ease-in-out"
+		class="group bg-tertiary-bg fixed right-10 bottom-10 z-50 hidden cursor-pointer items-center rounded-full px-1 py-1 transition-all duration-500 ease-in-out md:flex"
 	>
 		<div
 			class="relative flex h-[60px] w-[60px] items-center justify-start overflow-hidden rounded-full transition-all duration-500 ease-in-out group-hover:w-[170px]"
