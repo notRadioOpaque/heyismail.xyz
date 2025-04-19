@@ -10,16 +10,14 @@
 
 <a
 	{href}
-	class="group text-primary-text relative h-52 w-full max-w-2xl rounded-3xl bg-white text-lg font-medium transition-all duration-300"
+	class="group text-primary-text relative h-24 w-full max-w-2xl rounded-3xl bg-white text-base font-medium transition-all duration-300 md:h-52 md:text-lg"
 >
-	<div class="flex h-full w-full flex-col justify-between p-12">
-		<!-- Text that slides right on hover -->
+	<div class="flex h-full w-full flex-col justify-between p-6 md:p-12">
 		<div class="w-max transform transition-transform duration-300 group-hover:translate-x-2">
 			{label}
 		</div>
 
 		<div class="flex justify-end">
-			<!-- Arrow that moves diagonally up and inward on hover -->
 			<div
 				class="transition-transform duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]"
 			>
