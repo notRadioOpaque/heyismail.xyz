@@ -35,7 +35,7 @@
 <footer bind:this={footer} class="bg-secondary-bg">
 	<div class="">
 		<div
-			class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between py-8 2xl:max-w-screen-2xl"
+			class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between px-6 py-8 md:px-0 2xl:max-w-screen-2xl"
 		>
 			<div class="flex items-center gap-2">
 				<Dot size="sm" />
@@ -59,15 +59,19 @@
 
 	<div class="border-border-stroke border-y">
 		<div
-			class=" 3xl:max-w-screen-3xl mx-auto flex h-[795px] w-full max-w-screen-xl items-center justify-center 2xl:max-w-screen-2xl"
+			class=" 3xl:max-w-screen-3xl mx-auto flex h-max w-full max-w-screen-xl flex-col items-center justify-center md:h-[795px] md:flex-row 2xl:max-w-screen-2xl"
 		>
-			<div class="flex w-1/2 flex-col gap-10">
-				<h2 bind:this={heroText} class="text-[96px] leading-[96px] tracking-[-4.8px] text-white">
+			<div class="order-2 my-6 flex w-full flex-col gap-10 px-6 md:my-0 md:w-1/2 md:px-0">
+				<h2
+					bind:this={heroText}
+					class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white md:w-[70%] md:text-[88px]
+				md:leading-[92px] md:tracking-[-3.7px]"
+				>
 					Let's create something extraordinary together<span class="text-tertiary-text">.</span>
 				</h2>
-				<p class="text-subtext-text text-2xl">Let’s make an impact</p>
+				<p class="text-subtext-text text-base md:text-2xl">Let’s make an impact</p>
 			</div>
-			<div class="flex w-1/2 flex-col gap-10 pl-14">
+			<div class="order-1 flex w-full flex-col gap-10 pl-6 md:w-1/2 md:pl-14">
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
 						<div class="w-[100px] overflow-hidden rounded-xl">
@@ -163,13 +167,15 @@
 						<p class="text-subtext-text text-base">Contact me</p>
 						<a
 							href="/"
-							class="text-[40px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4"
+							class="text-[24px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 md:text-[40px]"
 						>
 							hello<span class="text-tertiary-text">@</span>notradioopaque.dev
 						</a>
 					</div>
 
-					<p class="text-subtext-text w-[480px] text-[22px] leading-[30px] tracking-[-0.9]">
+					<p
+						class="text-subtext-text w-full text-lg leading-[30px] tracking-[-0.9] md:w-[480px] md:text-[22px]"
+					>
 						Hit me up if you’re looking for a <span class="text-white"
 							>fast, reliable web-designer</span
 						> who can bring your vision to life
@@ -183,7 +189,7 @@
 
 	<div class="">
 		<div
-			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between py-[60px] 2xl:max-w-screen-2xl"
+			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-8 py-8 md:gap-0 md:py-[60px] 2xl:max-w-screen-2xl"
 		>
 			<div class="text-2xl text-white">Logo</div>
 
