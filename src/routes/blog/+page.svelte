@@ -28,8 +28,8 @@
 
 		<p
 			bind:this={heroText}
-			class="mx-auto text-center text-[36px] leading-[45px] tracking-[-0.7px] md:w-[70%] md:text-[88px]
-			md:leading-[92px] md:tracking-[-3.7px]"
+			class="mx-auto text-center text-[36px] leading-[45px] tracking-[-0.7px] lg:w-[70%] lg:text-[88px]
+			lg:leading-[92px] lg:tracking-[-3.7px]"
 		>
 			Blog
 		</p>

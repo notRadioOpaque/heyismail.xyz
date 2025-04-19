@@ -9,9 +9,9 @@
 
 <a
 	{href}
-	class="group bg-tertiary-bg text-primary-text relative h-24 w-full max-w-2xl rounded-3xl text-base font-medium transition-all duration-300 md:h-52 md:text-lg"
+	class="group bg-tertiary-bg text-primary-text relative h-24 w-full max-w-2xl rounded-3xl text-base font-medium transition-all duration-300 lg:h-52 lg:text-lg"
 >
-	<div class="flex h-full w-full flex-col justify-between p-6 md:p-12">
+	<div class="flex h-full w-full flex-col justify-between p-6 lg:p-12">
 		<div class="w-max transform transition-transform duration-300 group-hover:translate-x-2">
 			{label}
 		</div>

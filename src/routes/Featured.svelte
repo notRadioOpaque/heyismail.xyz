@@ -39,30 +39,30 @@
 
 <section
 	bind:this={section}
-	class="bg-secondary-bg section flex flex-col gap-24 px-6 py-20 md:px-20 md:py-[160px]"
+	class="bg-secondary-bg section flex flex-col gap-24 px-6 py-20 lg:px-20 lg:py-[160px]"
 >
 	<div class="flex flex-col gap-4">
-		<div bind:this={title} class="mb-10 flex items-center gap-3 md:mb-0">
+		<div bind:this={title} class="mb-10 flex items-center gap-3 lg:mb-0">
 			<Dot size="md" />
-			<p class="text-subtext-text text-sm font-medium md:text-lg">{@html pageTitle}</p>
+			<p class="text-subtext-text text-sm font-medium lg:text-lg">{@html pageTitle}</p>
 		</div>
 
 		<p
 			bind:this={description}
-			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white md:w-[70%] md:text-[88px]
-			md:leading-[92px] md:tracking-[-3.7px]"
+			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white lg:w-[70%] lg:text-[88px]
+			lg:leading-[92px] lg:tracking-[-3.7px]"
 		>
 			I blend creativity with technical expertise
 		</p>
 
-		<div bind:this={button} class="mt-10 md:mt-24">
+		<div bind:this={button} class="mt-10 lg:mt-24">
 			<SpecialBtn label="Become a client" action={() => {}} />
 		</div>
 	</div>
 
 	<div class="flex w-full flex-col">
-		<div class="flex flex-col items-center border-white md:flex-row">
-			<div class="border-border-stroke w-full border md:border-r-0">
+		<div class="flex flex-col items-center border-white lg:flex-row">
+			<div class="border-border-stroke w-full border lg:border-r-0">
 				<ProjectCard imgHeight={'460'} />
 			</div>
 			<div class="border-border-stroke w-full border">
@@ -70,15 +70,15 @@
 			</div>
 		</div>
 
-		<div class="flex h-full flex-col items-center md:flex-row">
-			<div class="border-border-stroke w-full border border-t-0 md:border-r-0">
+		<div class="flex h-full flex-col items-center lg:flex-row">
+			<div class="border-border-stroke w-full border border-t-0 lg:border-r-0">
 				<ProjectCard imgHeight={'350'} />
 			</div>
 			<div class="border-border-stroke w-full border border-t-0">
 				<ProjectCard imgHeight={'350'} />
 			</div>
 
-			<div class="hidden h-[500px] w-[100%] px-[35px] md:block">
+			<div class="hidden h-[500px] w-[100%] px-[35px] lg:block">
 				<button
 					class="group hover:bg-tertiary-bg flex h-full w-full cursor-pointer items-center justify-center rounded-[10px] bg-[#3d8c2e] transition-all hover:scale-[110%]"
 					onclick={() => navigate('/projects')}
