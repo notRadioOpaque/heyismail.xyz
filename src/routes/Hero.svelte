@@ -67,12 +67,12 @@
 	});
 </script>
 
-<section class="flex flex-col overflow-x-hidden px-6 py-10 lg:flex-row lg:px-20 lg:py-[120px]">
-	<div class="relative h-max w-full lg:w-1/3">
-		<div class="flex h-full w-full items-center gap-4 lg:mt-16">
+<section class="flex flex-col overflow-x-hidden px-6 py-10 xl:flex-row xl:px-20 xl:py-[120px]">
+	<div class="relative h-max w-full xl:w-1/3">
+		<div class="flex h-full w-full items-center gap-4 xl:mt-16">
 			<div
 				bind:this={imageDiv}
-				class="relative z-20 w-[100px] overflow-hidden rounded-xl lg:w-[160px]"
+				class="relative z-20 w-[100px] overflow-hidden rounded-xl xl:w-[160px]"
 			>
 				<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
 			</div>
@@ -159,13 +159,13 @@
 
 		<!-- <p
 			bind:this={asideText}
-			class="absolute text-[20px] leading-[28px] font-medium tracking-[-0.8px] lg:bottom-[195px]"
+			class="absolute text-[20px] leading-[28px] font-medium tracking-[-0.8px] xl:bottom-[195px]"
 		>
 			(2023 - PRESENT)
 		</p> -->
 	</div>
 
-	<div class="mt-12 flex w-full flex-col gap-[70px] lg:mt-0 lg:w-2/3">
+	<div class="mt-12 flex w-full flex-col gap-[70px] xl:mt-0 xl:w-2/3">
 		<div class="flex flex-col gap-8">
 			<div bind:this={gimmick} class="flex items-center gap-2">
 				<Dot size="sm" />
@@ -174,7 +174,7 @@
 
 			<h1
 				bind:this={heroText}
-				class="text-[36px] leading-[45px] tracking-[-0.7px] lg:text-[88px] lg:leading-[92px] lg:tracking-[-3.7px]"
+				class="text-[36px] leading-[45px] tracking-[-0.7px] xl:text-[88px] xl:leading-[92px] xl:tracking-[-3.7px]"
 			>
 				Hi! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>, a Front-end Engineer turning
 				your ideas into pixel-perfect realities
@@ -183,7 +183,7 @@
 
 		<div bind:this={subText} class="flex flex-col gap-24">
 			<p
-				class="text-lg font-medium text-[#6b6b6b] lg:text-2xl lg:leading-[36px] lg:tracking-[-1px]"
+				class="text-lg font-medium text-[#6b6b6b] xl:text-2xl xl:leading-[36px] xl:tracking-[-1px]"
 			>
 				I’m dedicated to crafting websites that bring your ideas to life, combining design and
 				development to deliver fast, impactful results.

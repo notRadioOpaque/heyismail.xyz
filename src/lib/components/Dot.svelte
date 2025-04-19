@@ -8,7 +8,7 @@
 			orb: 'w-2 h-2',
 			glow: 'w-3 h-3'
 		},
-		lg: {
+		xl: {
 			orb: 'w-3 h-3',
 			glow: 'w-4 h-4'
 		}

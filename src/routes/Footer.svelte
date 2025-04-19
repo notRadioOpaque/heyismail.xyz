@@ -35,7 +35,7 @@
 <footer bind:this={footer} class="bg-secondary-bg">
 	<div class="">
 		<div
-			class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between px-6 py-8 lg:px-0 2xl:max-w-screen-2xl"
+			class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between px-6 py-8 xl:px-0 2xl:max-w-screen-2xl"
 		>
 			<div class="flex items-center gap-2">
 				<Dot size="sm" />
@@ -59,21 +59,21 @@
 
 	<div class="border-border-stroke border-y">
 		<div
-			class=" 3xl:max-w-screen-3xl mx-auto flex h-max w-full max-w-screen-xl flex-col items-center justify-center lg:h-[795px] lg:flex-row 2xl:max-w-screen-2xl"
+			class=" 3xl:max-w-screen-3xl mx-auto flex h-max w-full max-w-screen-xl flex-col items-center justify-center xl:h-[795px] xl:flex-row 2xl:max-w-screen-2xl"
 		>
 			<div
-				class="order-2 my-6 flex w-full flex-col gap-10 px-6 lg:order-1 lg:my-0 lg:w-1/2 lg:px-0"
+				class="order-2 my-6 flex w-full flex-col gap-10 px-6 xl:order-1 xl:my-0 xl:w-1/2 xl:px-0"
 			>
 				<h2
 					bind:this={heroText}
-					class="w-full text-[30px] leading-[45px] tracking-[-0.7px] text-white lg:text-[88px]
-				lg:leading-[92px] lg:tracking-[-3.7px]"
+					class="w-full text-[30px] leading-[45px] tracking-[-0.7px] text-white xl:text-[88px]
+				xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
 					Let's create something extraordinary together<span class="text-tertiary-text">.</span>
 				</h2>
-				<p class="text-subtext-text text-base lg:text-2xl">Let’s make an impact</p>
+				<p class="text-subtext-text text-base xl:text-2xl">Let’s make an impact</p>
 			</div>
-			<div class="order-1 flex w-full flex-col gap-10 px-6 lg:order-2 lg:w-1/2 lg:pl-14">
+			<div class="order-1 flex w-full flex-col gap-10 px-6 xl:order-2 xl:w-1/2 xl:pl-14">
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
 						<div class="w-[100px] overflow-hidden rounded-xl">
@@ -169,14 +169,14 @@
 						<p class="text-subtext-text text-base">Contact me</p>
 						<a
 							href="/"
-							class="text-[24px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 lg:text-[40px]"
+							class="text-[24px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 xl:text-[40px]"
 						>
 							hello<span class="text-tertiary-text">@</span>notradioopaque.dev
 						</a>
 					</div>
 
 					<p
-						class="text-subtext-text w-full text-lg leading-[30px] tracking-[-0.9] lg:w-[480px] lg:text-[22px]"
+						class="text-subtext-text w-full text-lg leading-[30px] tracking-[-0.9] xl:w-[480px] xl:text-[22px]"
 					>
 						Hit me up if you’re looking for a <span class="text-white"
 							>fast, reliable web-designer</span
@@ -191,7 +191,7 @@
 
 	<div class="">
 		<div
-			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-6 py-8 lg:flex-row lg:gap-0 lg:py-[60px] 2xl:max-w-screen-2xl"
+			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-6 py-8 xl:flex-row xl:gap-0 xl:py-[60px] 2xl:max-w-screen-2xl"
 		>
 			<div class="text-2xl text-white">Logo</div>
 

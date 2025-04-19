@@ -35,23 +35,23 @@
 
 <section
 	bind:this={section}
-	class="flex flex-col gap-24 bg-[#f7f7f7] px-6 py-20 lg:px-20 lg:py-[160px]"
+	class="flex flex-col gap-24 bg-[#f7f7f7] px-6 py-20 xl:px-20 xl:py-[160px]"
 >
 	<div class="flex flex-col gap-4">
-		<div bind:this={title} class="mb-6 flex items-center gap-3 lg:mb-0">
+		<div bind:this={title} class="mb-6 flex items-center gap-3 xl:mb-0">
 			<Dot size="md" />
-			<p class="text-subtext-text text-sm font-medium lg:text-lg">{@html pageTitle}</p>
+			<p class="text-subtext-text text-sm font-medium xl:text-lg">{@html pageTitle}</p>
 		</div>
 
 		<p
 			bind:this={description}
-			class="text-primary-text w-full text-[36px] leading-[45px] tracking-[-0.7px] lg:w-[70%] lg:text-[88px]
-			lg:leading-[92px] lg:tracking-[-3.7px]"
+			class="text-primary-text w-full text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[70%] xl:text-[88px]
+			xl:leading-[92px] xl:tracking-[-3.7px]"
 		>
 			I’m all over the internet
 		</p>
 
-		<div class="mt-6 grid gap-8 md:grid-cols-2 lg:mt-[80px] lg:grid-cols-3">
+		<div class="mt-6 grid gap-8 md:grid-cols-2 xl:mt-[80px] xl:grid-cols-3">
 			{#each SOCIALS as social}
 				<SocialCard {...social} />
 			{/each}

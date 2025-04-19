@@ -21,8 +21,8 @@
 <div class="px-6 py-10 xl:px-20 xl:py-[80px]">
 	<p
 		bind:this={heroText}
-		class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] lg:w-[70%] lg:text-[88px]
-		lg:leading-[92px] lg:tracking-[-3.7px]"
+		class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[70%] xl:text-[88px]
+		xl:leading-[92px] xl:tracking-[-3.7px]"
 	>
 		EchoStream Entertainment
 	</p>
@@ -51,7 +51,7 @@
 
 		<section class="flex w-full flex-col gap-8 pt-10 pl-0 xl:pt-6 xl:pl-24">
 			<p
-				class="text-[20px] leading-[28px] tracking-[-0.2px] lg:text-[24px] lg:leading-[33px] lg:tracking-[-0.5px]"
+				class="text-[20px] leading-[28px] tracking-[-0.2px] xl:text-[24px] xl:leading-[33px] xl:tracking-[-0.5px]"
 			>
 				The goal was to create a modern, elegant, and user-friendly website that would not only
 				attract potential clients but also provide a seamless online experience, showcasing the
