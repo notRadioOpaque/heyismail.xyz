@@ -33,21 +33,25 @@
 	});
 </script>
 
-<section bind:this={section} class="flex flex-col gap-24 bg-[#f7f7f7] px-20 py-[160px]">
+<section
+	bind:this={section}
+	class="flex flex-col gap-24 bg-[#f7f7f7] px-6 py-20 md:px-20 md:py-[160px]"
+>
 	<div class="flex flex-col gap-4">
-		<div bind:this={title} class="flex items-center gap-2">
+		<div bind:this={title} class="mb-6 flex items-center gap-3 md:mb-0">
 			<Dot size="md" />
-			<p class="text-subtext-text text-lg font-medium">{@html pageTitle}</p>
+			<p class="text-subtext-text text-sm font-medium md:text-lg">{@html pageTitle}</p>
 		</div>
 
 		<p
 			bind:this={description}
-			class="text-primary-text w-[70%] text-[90px] leading-[99px] tracking-[-3.6px]"
+			class="text-primary-text w-full text-[36px] leading-[45px] tracking-[-0.7px] md:w-[70%] md:text-[88px]
+			md:leading-[92px] md:tracking-[-3.7px]"
 		>
 			I’m all over the internet
 		</p>
 
-		<div class="mt-[80px] grid grid-cols-3 gap-8">
+		<div class="mt-6 grid gap-8 md:mt-[80px] md:grid-cols-3">
 			{#each SOCIALS as social}
 				<SocialCard {...social} />
 			{/each}
