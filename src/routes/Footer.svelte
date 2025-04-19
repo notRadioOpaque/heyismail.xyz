@@ -61,17 +61,19 @@
 		<div
 			class=" 3xl:max-w-screen-3xl mx-auto flex h-max w-full max-w-screen-xl flex-col items-center justify-center md:h-[795px] md:flex-row 2xl:max-w-screen-2xl"
 		>
-			<div class="order-2 my-6 flex w-full flex-col gap-10 px-6 md:my-0 md:w-1/2 md:px-0">
+			<div
+				class="order-2 my-6 flex w-full flex-col gap-10 px-6 md:order-1 md:my-0 md:w-1/2 md:px-0"
+			>
 				<h2
 					bind:this={heroText}
-					class="w-full text-[30px] leading-[45px] tracking-[-0.7px] text-white md:w-[70%] md:text-[88px]
+					class="w-full text-[30px] leading-[45px] tracking-[-0.7px] text-white md:text-[88px]
 				md:leading-[92px] md:tracking-[-3.7px]"
 				>
 					Let's create something extraordinary together<span class="text-tertiary-text">.</span>
 				</h2>
 				<p class="text-subtext-text text-base md:text-2xl">Let’s make an impact</p>
 			</div>
-			<div class="order-1 flex w-full flex-col gap-10 pl-6 md:w-1/2 md:pl-14">
+			<div class="order-1 flex w-full flex-col gap-10 pl-6 md:order-2 md:w-1/2 md:pl-14">
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
 						<div class="w-[100px] overflow-hidden rounded-xl">
@@ -189,7 +191,7 @@
 
 	<div class="">
 		<div
-			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-8 py-8 md:gap-0 md:py-[60px] 2xl:max-w-screen-2xl"
+			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-6 py-8 md:flex-row md:gap-0 md:py-[60px] 2xl:max-w-screen-2xl"
 		>
 			<div class="text-2xl text-white">Logo</div>
 
