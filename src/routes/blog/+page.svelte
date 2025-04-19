@@ -28,9 +28,10 @@
 
 		<p
 			bind:this={heroText}
-			class="text-primary-text text-center text-[90px] leading-[99px] tracking-[-3.6px]"
+			class="mx-auto text-center text-[36px] leading-[45px] tracking-[-0.7px] md:w-[70%] md:text-[88px]
+			md:leading-[92px] md:tracking-[-3.7px]"
 		>
-			Blogs
+			Blog
 		</p>
 	</div>
 	<h1 class="mx-auto text-[20px]">Still cooking! 👨‍🍳</h1>
