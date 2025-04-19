@@ -64,7 +64,7 @@
 			<div class="order-2 my-6 flex w-full flex-col gap-10 px-6 md:my-0 md:w-1/2 md:px-0">
 				<h2
 					bind:this={heroText}
-					class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white md:w-[70%] md:text-[88px]
+					class="w-full text-[30px] leading-[45px] tracking-[-0.7px] text-white md:w-[70%] md:text-[88px]
 				md:leading-[92px] md:tracking-[-3.7px]"
 				>
 					Let's create something extraordinary together<span class="text-tertiary-text">.</span>
