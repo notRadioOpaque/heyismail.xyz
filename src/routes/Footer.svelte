@@ -73,7 +73,7 @@
 				</h2>
 				<p class="text-subtext-text text-base md:text-2xl">Let’s make an impact</p>
 			</div>
-			<div class="order-1 flex w-full flex-col gap-10 pl-6 md:order-2 md:w-1/2 md:pl-14">
+			<div class="order-1 flex w-full flex-col gap-10 px-6 md:order-2 md:w-1/2 md:pl-14">
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
 						<div class="w-[100px] overflow-hidden rounded-xl">
