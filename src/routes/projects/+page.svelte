@@ -39,7 +39,7 @@
 	};
 </script>
 
-<section class="px-[160px] py-[70px]">
+<section class="px-6 py-[70px] md:px-[160px]">
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -48,31 +48,36 @@
 
 		<p
 			bind:this={heroText}
-			class="text-primary-text text-center text-[90px] leading-[99px] tracking-[-3.6px]"
+			class="mx-auto text-center text-[36px] leading-[45px] tracking-[-0.7px] md:w-[70%] md:text-[88px]
+			md:leading-[92px] md:tracking-[-3.7px]"
 		>
 			Selected work
 		</p>
 	</div>
 
-	<div bind:this={block} class="mt-20 flex flex-col gap-[120px]">
+	<div bind:this={block} class="mt-10 flex flex-col gap-14 md:mt-20 md:gap-[120px]">
 		{#each projectCount as project}
 			<a href={`/projects/${project}`} class="flex flex-col gap-8">
-				<div class="h-[683px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100">
+				<div
+					class="h-[350px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 md:h-[683px]"
+				>
 					<img src="" alt="" />
 				</div>
 
-				<div class="flex items-center justify-between">
+				<div class="flex flex-col justify-between md:flex-row md:items-center">
 					<div class="flex flex-col gap-4">
-						<p class="text-subtext-text text-[17px]">Mobile app</p>
-						<p class="text-primary-text text-[60px] leading-[66px] tracking-[-2.4px]">
+						<p class="text-subtext-text text-sm md:text-[17px]">Mobile app</p>
+						<p
+							class="text-primary-text text-[24px] leading-[33px] tracking-[-1.2px] md:text-[60px] md:leading-[66px] md:tracking-[-2.4px]"
+						>
 							EchoStream Entertainment
 						</p>
-						<p class="text-subtext-text text-[22px]">
+						<p class="text-subtext-text text-sm md:text-[22px]">
 							Interface is streamlined for ease of navigation, with clean layouts
 						</p>
 					</div>
 
-					<div>
+					<div class="mt-6 md:mt-0">
 						<Button label="Learn more" action={learnMoreBtnClicked} />
 					</div>
 				</div>
