@@ -47,7 +47,7 @@
 	});
 </script>
 
-<section class="flex flex-col gap-28 px-20 py-[70px]">
+<section class="flex flex-col gap-14 px-6 py-[70px] md:gap-28 md:px-20">
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -56,18 +56,21 @@
 
 		<p
 			bind:this={heroText}
-			class="text-primary-text text-center text-[90px] leading-[99px] tracking-[-3.6px]"
+			class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] md:w-[70%] md:text-[88px]
+			md:leading-[92px] md:tracking-[-3.7px]"
 		>
 			My Experience
 		</p>
 	</div>
 
-	<div bind:this={graph} class="flex flex-col gap-10">
+	<div bind:this={graph} class="flex flex-col gap-4 md:gap-10">
 		<div class="flex flex-col gap-4">
-			<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">
+			<p
+				class="text-primary-text text-[24px] leading-[23px] tracking-[-0.9px] md:text-[40px] md:leading-[46px] md:tracking-[-1.8px]"
+			>
 				Contribution Graph
 			</p>
-			<p class="text-subtext-text text-sm font-medium">
+			<p class="text-subtext-text text-sm font-normal md:font-medium">
 				{hightlight}
 			</p>
 		</div>
@@ -91,10 +94,14 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col gap-20">
-		<p class="text-primary-text text-[40px] leading-[46px] tracking-[-1.8px]">Work Experience</p>
+	<div class="flex flex-col gap-10 md:gap-20">
+		<p
+			class="text-primary-text text-[24px] leading-[23px] tracking-[-0.9px] md:text-[40px] md:leading-[46px] md:tracking-[-1.8px]"
+		>
+			Work Experience
+		</p>
 
-		<div class="grid grid-cols-1 gap-24 md:grid-cols-2">
+		<div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24">
 			{#each EXPERIENCES as experience}
 				<ExperienceCard {...experience} />
 			{/each}
