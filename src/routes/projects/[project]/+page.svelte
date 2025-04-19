@@ -18,25 +18,29 @@
 	});
 </script>
 
-<div class="px-20 py-[80px]">
-	<p bind:this={heroText} class="text-[86px] leading-[90px] tracking-[-3.4px]">
+<div class="px-6 py-10 xl:px-20 xl:py-[80px]">
+	<p
+		bind:this={heroText}
+		class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] lg:w-[70%] lg:text-[88px]
+		lg:leading-[92px] lg:tracking-[-3.7px]"
+	>
 		EchoStream Entertainment
 	</p>
 
-	<div class="mt-20 flex justify-between">
-		<aside class="w-[40%]">
+	<div class="mt-8 flex flex-col justify-between xl:mt-20 xl:flex-row">
+		<aside class="w-full xl:w-[40%]">
 			<div class="flex flex-col">
 				<div class="border-border-stroke-light flex flex-col gap-2 border-b py-6">
-					<p class="text-subtext-text text-[17px]">Project Type</p>
-					<p class="text-[20px]">Mobile App</p>
+					<p class="text-subtext-text text-sm xl:text-[17px]">Project Type</p>
+					<p class="text-sm xl:text-[20px]">Mobile App</p>
 				</div>
 				<div class="border-border-stroke-light flex flex-col gap-2 border-b py-6">
-					<p class="text-subtext-text text-[17px]">Tech Stack</p>
-					<p class="text-[20px]">Mobile App</p>
+					<p class="text-subtext-text text-sm xl:text-[17px]">Tech Stack</p>
+					<p class="text-sm xl:text-[20px]">Mobile App</p>
 				</div>
 				<div class="flex flex-col gap-2 py-6">
-					<p class="text-subtext-text text-[17px]">Role</p>
-					<p class="text-[20px]">Mobile App</p>
+					<p class="text-subtext-text text-sm xl:text-[17px]">Role</p>
+					<p class="text-sm xl:text-[20px]">Mobile App</p>
 				</div>
 			</div>
 
@@ -45,19 +49,23 @@
 			</div>
 		</aside>
 
-		<section class="flex w-full flex-col gap-8 pt-6 pl-24">
-			<p class="text-[26px] leading-[36px] font-medium tracking-[-1px]">
+		<section class="flex w-full flex-col gap-8 pt-10 pl-0 xl:pt-6 xl:pl-24">
+			<p
+				class="text-[20px] leading-[28px] tracking-[-0.2px] lg:text-[24px] lg:leading-[33px] lg:tracking-[-0.5px]"
+			>
 				The goal was to create a modern, elegant, and user-friendly website that would not only
 				attract potential clients but also provide a seamless online experience, showcasing the
 				studio and allowing customers to book appointments and explore services.
 			</p>
 
-			<p class="text-subtext-text text-[17px]">
+			<p class="text-subtext-text text-base xl:text-[17px]">
 				I’m passionate about empowering creators with no-code web design tools. My mission is to
 				bring your digital visions to life quickly and effectively.
 			</p>
 
-			<div class="h-[583px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100">
+			<div
+				class="h-[400px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 xl:h-[583px]"
+			>
 				<img src="" alt="" />
 			</div>
 		</section>
