@@ -33,7 +33,7 @@
 	let selected: any = $state(null);
 </script>
 
-<div class="flex w-full flex-col gap-16 py-[70px]">
+<div class="flex w-full flex-col gap-8 py-[70px] md:gap-0">
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -181,7 +181,7 @@
 					</p>
 				</div>
 
-				<div class="mt-6 flex w-full flex-col gap-8">
+				<div class="mt-6 flex w-full flex-col gap-8 md:flex-row">
 					<div class="flex w-full flex-col gap-4">
 						<h3
 							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
