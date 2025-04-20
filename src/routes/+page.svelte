@@ -5,7 +5,7 @@
 </script>
 
 <Hero />
-<Featured />
-<Socials />
+<!-- <Featured /> -->
+<!-- <Socials /> -->
 
 <p class="mt-10 text-center text-3xl">Just a test</p>
