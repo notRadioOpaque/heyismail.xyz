@@ -2,8 +2,6 @@
 	import { onMount } from 'svelte';
 	import { writable, derived } from 'svelte/store';
 
-	export let headerSelector = 'header';
-	export let footerSelector = 'footer';
 	let btn: HTMLButtonElement;
 
 	const headerVisible = writable(true);
@@ -15,8 +13,8 @@
 	);
 
 	onMount(() => {
-		const header = document.querySelector(headerSelector);
-		const footer = document.querySelector(footerSelector);
+		const header = document.querySelector('header');
+		const footer = document.querySelector('footer');
 
 		const observer = new IntersectionObserver(
 			(entries) => {
