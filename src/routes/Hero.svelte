@@ -13,6 +13,8 @@
 	let gimmick: HTMLDivElement;
 
 	onMount(() => {
+		if (!heroText || !imageDiv || !rightContent || !gimmick || !subText) return;
+
 		const splitText = new SplitType(heroText, { types: 'chars,words,lines' });
 
 		const tl = gsap.timeline();

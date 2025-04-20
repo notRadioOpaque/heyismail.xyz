@@ -16,6 +16,8 @@
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
+		if (!section || !title || !description || !button) return;
+
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: section,
