@@ -13,9 +13,9 @@
 	let description: HTMLDivElement;
 	let button: HTMLHeadingElement;
 
-	gsap.registerPlugin(ScrollTrigger);
-
 	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
 		if (!section || !title || !description || !button) return;
 
 		const tl = gsap.timeline({
