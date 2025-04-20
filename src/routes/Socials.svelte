@@ -13,9 +13,9 @@
 	let title: HTMLDivElement;
 	let description: HTMLDivElement;
 
-	gsap.registerPlugin(ScrollTrigger);
-
 	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
 		if (!section || !title || !description) return;
 
 		const tl = gsap.timeline({
