@@ -43,7 +43,9 @@
 	bind:this={section}
 	class="bg-secondary-bg section flex flex-col gap-24 px-6 py-20 xl:px-20 xl:py-[160px]"
 >
-	<div class="flex flex-col gap-4">
+	<div
+		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
+	>
 		<div bind:this={title} class="mb-10 flex items-center gap-3 xl:mb-0">
 			<Dot size="md" />
 			<p class="text-subtext-text text-sm font-medium xl:text-lg">{@html pageTitle}</p>
@@ -62,7 +64,9 @@
 		</div>
 	</div>
 
-	<div class="flex w-full flex-col">
+	<div
+		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
+	>
 		<div class="flex flex-col items-center border-white xl:flex-row">
 			<div class="border-border-stroke w-full border xl:border-r-0">
 				<ProjectCard imgHeight={'460'} />
