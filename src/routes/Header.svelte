@@ -25,7 +25,7 @@
 </script>
 
 <header
-	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b px-6 py-0 xl:px-20 xl:py-8"
+	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b px-6 py-0 xl:h-full xl:px-20 xl:py-8"
 >
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between 2xl:max-w-screen-2xl"
@@ -47,7 +47,7 @@
 			{/each}
 		</nav>
 
-		<div class="hidden w-1/3 items-center justify-end gap-8 xl:flex">
+		<div class="hidden w-1/3 items-center justify-between gap-8 xl:flex">
 			<div class="flex items-center gap-1.5">
 				<p class="text-subtext-text text-sm">Email:</p>
 
