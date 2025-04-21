@@ -41,7 +41,7 @@
 
 <section
 	bind:this={section}
-	class="bg-secondary-bg section flex flex-col gap-24 px-6 py-20 xl:px-20 xl:py-[160px]"
+	class="bg-secondary-bg section flex flex-col gap-24 px-6 py-20 lg:px-20 xl:py-[160px]"
 >
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
@@ -67,8 +67,8 @@
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
 	>
-		<div class="flex flex-col items-center border-white xl:flex-row">
-			<div class="border-border-stroke w-full border xl:border-r-0">
+		<div class="flex flex-col items-center border-white lg:flex-row">
+			<div class="border-border-stroke w-full border lg:border-r-0">
 				<ProjectCard imgHeight={'460'} />
 			</div>
 			<div class="border-border-stroke w-full border">
@@ -76,11 +76,13 @@
 			</div>
 		</div>
 
-		<div class="flex h-full flex-col items-center xl:flex-row">
-			<div class="border-border-stroke w-full border border-t-0 xl:border-r-0">
+		<div class="flex h-full flex-col items-center lg:flex-row">
+			<div
+				class="border-border-stroke w-full border border-t-0 lg:border-t lg:border-r-0 xl:border-t-0"
+			>
 				<ProjectCard imgHeight={'350'} />
 			</div>
-			<div class="border-border-stroke w-full border border-t-0">
+			<div class="border-border-stroke w-full border border-t-0 lg:border-t xl:border-t-0">
 				<ProjectCard imgHeight={'350'} />
 			</div>
 

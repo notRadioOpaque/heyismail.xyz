@@ -18,17 +18,17 @@
 	});
 </script>
 
-<div class="px-6 py-10 xl:px-20 xl:py-[80px]">
+<div class="px-6 py-10 lg:px-20 xl:py-[80px]">
 	<p
 		bind:this={heroText}
-		class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[70%] xl:text-[88px]
-		xl:leading-[92px] xl:tracking-[-3.7px]"
+		class="text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[90%]
+		xl:text-[88px] xl:leading-[92px] xl:tracking-[-3.7px]"
 	>
 		EchoStream Entertainment
 	</p>
 
-	<div class="mt-8 flex flex-col justify-between xl:mt-20 xl:flex-row">
-		<aside class="w-full xl:w-[40%]">
+	<div class="mt-8 flex w-full flex-col justify-between lg:w-2/3 xl:mt-20 xl:w-full xl:flex-row">
+		<aside class="w-full lg:w-1/2 xl:w-[40%]">
 			<div class="flex flex-col">
 				<div class="border-border-stroke-light flex flex-col gap-2 border-b py-6">
 					<p class="text-subtext-text text-sm xl:text-[17px]">Project Type</p>

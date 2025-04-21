@@ -39,7 +39,7 @@
 	};
 </script>
 
-<section class="px-6 py-[70px] xl:px-[160px]">
+<section class="px-6 py-[70px] lg:px-[160px]">
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />

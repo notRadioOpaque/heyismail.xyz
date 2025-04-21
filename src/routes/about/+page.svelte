@@ -49,8 +49,8 @@
 		</p>
 	</div>
 
-	<div bind:this={block} class="flex flex-col gap-10 xl:flex-row xl:gap-0">
-		<div class="p-6 pt-0 xl:h-screen xl:w-1/3 xl:p-20">
+	<div bind:this={block} class="flex flex-col gap-10 lg:flex-row lg:gap-0">
+		<div class="p-6 pt-0 lg:h-screen lg:w-1/3 lg:p-20">
 			<div class="flex w-full flex-col items-center gap-4">
 				<div class="w-full overflow-hidden rounded-xl">
 					<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
@@ -78,8 +78,8 @@
 			</div>
 		</div>
 
-		<div class="p-6 pt-0 xl:w-2/3 xl:p-20 xl:pl-5">
-			<div class="w-full xl:w-4/5">
+		<div class="p-6 pt-0 lg:w-2/3 lg:p-20 lg:pl-5">
+			<div class="w-full lg:w-4/5">
 				<p
 					class="text-primary-text text-[20px] leading-[28px] tracking-[-0.2px] xl:text-[24px] xl:leading-[33px] xl:tracking-[-0.5px]"
 				>
@@ -181,7 +181,7 @@
 					</p>
 				</div>
 
-				<div class="mt-6 flex w-full flex-col gap-8 xl:flex-row">
+				<div class="mt-6 flex w-full flex-col gap-8 lg:flex-row">
 					<div class="flex w-full flex-col gap-4">
 						<h3
 							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
@@ -248,7 +248,7 @@
 
 				<div class="mt-8 flex flex-col gap-4 xl:flex-row">
 					<div
-						class={`order-2 grid gap-3 transition-all duration-300 xl:grid-cols-2 ${
+						class={`order-2 grid gap-3 transition-all duration-300 lg:grid-cols-2 ${
 							selected ? 'w-full xl:w-[600px]' : 'w-full xl:grid-cols-3'
 						}`}
 					>

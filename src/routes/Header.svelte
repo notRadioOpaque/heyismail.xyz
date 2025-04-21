@@ -25,14 +25,14 @@
 </script>
 
 <header
-	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b px-6 py-0 xl:h-full xl:px-20 xl:py-8"
+	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b px-6 py-0 lg:px-20 xl:h-full xl:py-8"
 >
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between 2xl:max-w-screen-2xl"
 	>
 		<div class="w-1/3">Logo</div>
 
-		<nav class="hidden w-1/3 gap-6 xl:flex">
+		<nav class="hidden w-1/3 gap-6 lg:flex">
 			{#each NAV_LINKS as navLink}
 				<div class="relative">
 					<a
@@ -47,8 +47,8 @@
 			{/each}
 		</nav>
 
-		<div class="hidden w-1/3 items-center justify-between gap-8 xl:flex">
-			<div class="flex items-center gap-1.5">
+		<div class="hidden w-max items-center justify-between gap-8 lg:flex lg:w-1/3">
+			<div class="items-center gap-1.5 lg:hidden xl:flex">
 				<p class="text-subtext-text text-sm">Email:</p>
 
 				<a href="/" class="hover:text-subtext-text text-sm font-medium transition-colors"
@@ -56,12 +56,12 @@
 				>
 			</div>
 
-			<div class="min-w-[120px] flex-shrink-0">
+			<div class="ml-auto min-w-[120px] flex-shrink-0">
 				<Button label="Get in touch" action={() => {}} />
 			</div>
 		</div>
 
-		<div class="flex items-center justify-center xl:hidden">
+		<div class="flex items-center justify-center lg:hidden">
 			{#if !menuOpen}
 				<button class="cursor-pointer" onclick={showMenu}>
 					<img src="./icons/menu_icon.svg" class="h-8 w-8" alt="Open menu" />

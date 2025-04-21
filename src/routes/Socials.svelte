@@ -37,7 +37,7 @@
 
 <section
 	bind:this={section}
-	class=" flex w-full flex-col gap-24 bg-[#f7f7f7] px-6 py-20 xl:px-20 xl:py-[160px]"
+	class=" flex w-full flex-col gap-24 bg-[#f7f7f7] px-6 py-20 lg:px-20 xl:py-[160px]"
 >
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"

@@ -47,7 +47,7 @@
 	});
 </script>
 
-<section class="flex flex-col gap-14 px-6 py-[70px] xl:gap-28 xl:px-20">
+<section class="flex flex-col gap-14 px-6 py-[70px] lg:gap-24 lg:px-20 xl:gap-28">
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -94,14 +94,14 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col gap-10 xl:gap-20">
+	<div class="flex flex-col gap-10 lg:gap-16 xl:gap-20">
 		<p
 			class="text-primary-text text-[24px] leading-[23px] tracking-[-0.9px] xl:text-[40px] xl:leading-[46px] xl:tracking-[-1.8px]"
 		>
 			Work Experience
 		</p>
 
-		<div class="grid grid-cols-1 gap-12 xl:grid-cols-2 xl:gap-24">
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-24">
 			{#each EXPERIENCES as experience}
 				<ExperienceCard {...experience} />
 			{/each}

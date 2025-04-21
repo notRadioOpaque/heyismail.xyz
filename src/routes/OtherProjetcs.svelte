@@ -10,23 +10,23 @@
 		</div>
 
 		<p
-			class="mx-auto text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[70%] xl:text-[88px]
-			xl:leading-[92px] xl:tracking-[-3.7px]"
+			class="text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[90%]
+			xl:text-[88px] xl:leading-[92px] xl:tracking-[-3.7px]"
 		>
 			Some of my other projects
 		</p>
 	</div>
 
-	<div class="flex w-full flex-col xl:flex-row">
-		<div class="border-border-stroke-light w-full border xl:border-r-0">
+	<div class="flex w-full flex-col lg:flex-row">
+		<div class="border-border-stroke-light w-full border lg:border-r-0">
 			<ProjectCard variant="light" imgHeight={'350'} />
 		</div>
 
-		<div class="border-border-stroke-light w-full border border-t-0 xl:border-t xl:border-r-0">
+		<div class="border-border-stroke-light w-full border border-t-0 lg:border-t lg:border-r-0">
 			<ProjectCard variant="light" imgHeight={'350'} />
 		</div>
 
-		<div class="border-border-stroke-light w-full border border-t-0 xl:border-t">
+		<div class="border-border-stroke-light w-full border border-t-0 lg:border-t">
 			<ProjectCard variant="light" imgHeight={'350'} />
 		</div>
 	</div>
