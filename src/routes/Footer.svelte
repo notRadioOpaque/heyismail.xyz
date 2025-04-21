@@ -33,29 +33,29 @@
 </script>
 
 <footer bind:this={footer} class="bg-secondary-bg">
-	<div class="">
-		<div
-			class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between px-6 py-8 xl:px-0 2xl:max-w-screen-2xl"
-		>
-			<div class="flex items-center gap-2">
-				<Dot size="sm" />
-				<p class="text-sm text-white">Available for work</p>
-			</div>
-
-			<button
-				onclick={scrollToTop}
-				class="group flex cursor-pointer items-center gap-3 transition-all"
-			>
-				<p class="text-subtext-text text-sm transition-all group-hover:underline">Back to top</p>
-
-				<div
-					class="flex h-11 w-11 items-center justify-center rounded-full bg-white transition-all group-hover:rotate-45"
-				>
-					<img class="mx-2" src="/icons/arrow_up.svg" alt="svelte icon" width="24" height="24" />
-				</div>
-			</button>
+	<!-- <div class=""> -->
+	<div
+		class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl items-center justify-between px-6 py-8 xl:px-0 2xl:max-w-screen-2xl"
+	>
+		<div class="flex items-center gap-2">
+			<Dot size="sm" />
+			<p class="text-sm text-white">Available for work</p>
 		</div>
+
+		<button
+			onclick={scrollToTop}
+			class="group flex cursor-pointer items-center gap-3 transition-all"
+		>
+			<p class="text-subtext-text text-sm transition-all group-hover:underline">Back to top</p>
+
+			<div
+				class="flex h-11 w-11 items-center justify-center rounded-full bg-white transition-all group-hover:rotate-45"
+			>
+				<img class="mx-2" src="/icons/arrow_up.svg" alt="svelte icon" width="24" height="24" />
+			</div>
+		</button>
 	</div>
+	<!-- </div> -->
 
 	<div class="border-border-stroke border-y">
 		<div

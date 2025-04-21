@@ -53,7 +53,7 @@
 
 		<p
 			bind:this={description}
-			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white xl:w-[70%] xl:text-[88px]
+			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white xl:w-[90%] xl:text-[88px]
 			xl:leading-[92px] xl:tracking-[-3.7px]"
 		>
 			I blend creativity with technical expertise

@@ -45,16 +45,12 @@
 			'-=0.1'
 		);
 
-		tl.from(
-			gimmick,
-			{
-				x: 100,
-				opacity: 0,
-				duration: 0.4,
-				ease: 'power4.out'
-			}
-			// '-=0.1'
-		);
+		tl.from(gimmick, {
+			x: 50,
+			opacity: 0,
+			duration: 0.4,
+			ease: 'power4.out'
+		});
 
 		tl.from(
 			[subText],
@@ -69,7 +65,9 @@
 	});
 </script>
 
-<section class="flex flex-col overflow-x-hidden px-6 py-10 xl:flex-row xl:px-20 xl:py-[120px]">
+<section
+	class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 overflow-x-hidden px-6 py-10 xl:flex-row xl:px-0 xl:py-[120px] 2xl:max-w-screen-2xl"
+>
 	<div class="relative h-max w-full xl:w-1/3">
 		<div class="flex h-full w-full items-center gap-4 xl:mt-16">
 			<div
@@ -158,13 +156,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- <p
-			bind:this={asideText}
-			class="absolute text-[20px] leading-[28px] font-medium tracking-[-0.8px] xl:bottom-[195px]"
-		>
-			(2023 - PRESENT)
-		</p> -->
 	</div>
 
 	<div class="mt-12 flex w-full flex-col gap-[70px] xl:mt-0 xl:w-2/3">
