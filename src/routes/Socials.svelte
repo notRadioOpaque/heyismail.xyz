@@ -37,9 +37,11 @@
 
 <section
 	bind:this={section}
-	class="flex flex-col gap-24 bg-[#f7f7f7] px-6 py-20 xl:px-20 xl:py-[160px]"
+	class=" flex w-full flex-col gap-24 bg-[#f7f7f7] px-6 py-20 xl:px-20 xl:py-[160px]"
 >
-	<div class="flex flex-col gap-4">
+	<div
+		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
+	>
 		<div bind:this={title} class="mb-6 flex items-center gap-3 xl:mb-0">
 			<Dot size="md" />
 			<p class="text-subtext-text text-sm font-medium xl:text-lg">{@html pageTitle}</p>
@@ -47,8 +49,8 @@
 
 		<p
 			bind:this={description}
-			class="text-primary-text w-full text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[70%] xl:text-[88px]
-			xl:leading-[92px] xl:tracking-[-3.7px]"
+			class="text-primary-text w-full text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[80%] xl:text-[88px] xl:leading-[92px]
+			xl:tracking-[-3.7px]"
 		>
 			I’m all over the internet
 		</p>
