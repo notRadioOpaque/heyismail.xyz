@@ -56,7 +56,9 @@
 				>
 			</div>
 
-			<Button label="Get in touch" action={() => {}} />
+			<div class="min-w-[120px] flex-shrink-0">
+				<Button label="Get in touch" action={() => {}} />
+			</div>
 		</div>
 
 		<div class="flex items-center justify-center xl:hidden">
