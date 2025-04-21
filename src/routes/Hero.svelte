@@ -66,7 +66,7 @@
 </script>
 
 <section
-	class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 overflow-x-hidden px-6 py-10 lg:px-20 xl:flex-row xl:py-[120px] 2xl:max-w-screen-2xl"
+	class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 overflow-x-hidden px-6 py-10 lg:px-20 xl:flex-row xl:px-0 xl:py-[120px] 2xl:max-w-screen-2xl"
 >
 	<div class="relative h-max w-full xl:w-1/3">
 		<div class="flex h-full w-full items-center gap-4 xl:mt-16">
