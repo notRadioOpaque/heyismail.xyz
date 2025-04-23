@@ -22,7 +22,9 @@
 	});
 </script>
 
-<div class="flex h-[750px] w-full flex-col gap-28 px-20 py-[70px]">
+<div
+	class="3xl:max-w-screen-3xl mx-auto flex h-[750px] w-full max-w-screen-xl flex-col gap-28 px-20 py-[70px] 2xl:max-w-screen-2xl"
+>
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
