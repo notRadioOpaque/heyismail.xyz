@@ -42,7 +42,9 @@
 	};
 </script>
 
-<section class="px-6 py-[70px] lg:px-[160px]">
+<section
+	class="3xl:max-w-screen-3xl mx-auto max-w-screen-xl px-6 py-[70px] lg:mb-10 lg:px-[160px] 2xl:max-w-screen-2xl"
+>
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />

@@ -18,7 +18,9 @@
 	});
 </script>
 
-<div class="px-6 py-10 lg:px-20 xl:py-[80px]">
+<div
+	class="3xl:max-w-screen-3xl mx-auto max-w-screen-xl px-6 py-10 lg:px-20 xl:py-[80px] 2xl:max-w-screen-2xl"
+>
 	<p
 		bind:this={heroText}
 		class="text-[36px] leading-[45px] tracking-[-0.7px] xl:w-[90%]

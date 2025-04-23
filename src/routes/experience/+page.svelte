@@ -10,6 +10,8 @@
 
 	let { data }: PageProps = $props();
 
+	$inspect(data);
+
 	const thisYear = new Date().getFullYear();
 	const years = Array.from({ length: thisYear - 2022 + 1 }, (_, i) => thisYear - i);
 
@@ -50,7 +52,9 @@
 	});
 </script>
 
-<section class="flex flex-col gap-14 px-6 py-[70px] lg:gap-24 lg:px-20 xl:gap-28">
+<section
+	class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl flex-col gap-14 px-6 py-[70px] lg:gap-24 lg:px-20 xl:gap-28 2xl:max-w-screen-2xl"
+>
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
