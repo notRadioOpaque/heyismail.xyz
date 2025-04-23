@@ -6,6 +6,9 @@
 	import Dot from '$lib/components/Dot.svelte';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
+	import type { PageProps } from './$types';
+
+	let { data }: PageProps = $props();
 
 	const thisYear = new Date().getFullYear();
 	const years = Array.from({ length: thisYear - 2022 + 1 }, (_, i) => thisYear - i);

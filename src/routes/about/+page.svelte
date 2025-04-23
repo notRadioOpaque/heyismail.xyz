@@ -3,6 +3,9 @@
 	import Dot from '$lib/components/Dot.svelte';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
+	import type { PageProps } from './$types';
+
+	let { data }: PageProps = $props();
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
