@@ -36,7 +36,9 @@
 	let selected: any = $state(null);
 </script>
 
-<div class="flex w-full flex-col gap-8 py-[70px] xl:gap-0">
+<div
+	class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-8 py-[70px] xl:gap-0 2xl:max-w-screen-2xl"
+>
 	<div class="flex flex-col items-center justify-center gap-2">
 		<div bind:this={subText} class="flex items-center gap-2">
 			<Dot size="sm" />
@@ -53,7 +55,7 @@
 	</div>
 
 	<div bind:this={block} class="flex flex-col gap-10 lg:flex-row lg:gap-0">
-		<div class="p-6 pt-0 lg:h-screen lg:w-1/3 lg:p-20">
+		<div class="p-6 pt-0 lg:w-1/3 lg:p-20">
 			<div class="flex w-full flex-col items-center gap-4">
 				<div class="w-full overflow-hidden rounded-xl">
 					<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
@@ -81,7 +83,7 @@
 			</div>
 		</div>
 
-		<div class="p-6 pt-0 lg:w-2/3 lg:p-20 lg:pl-5">
+		<div class="p-6 pt-0 lg:w-2/3 lg:p-20 lg:pl-0">
 			<div class="w-full lg:w-4/5">
 				<p
 					class="text-primary-text text-[20px] leading-[28px] tracking-[-0.2px] xl:text-[24px] xl:leading-[33px] xl:tracking-[-0.5px]"
