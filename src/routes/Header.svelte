@@ -32,7 +32,7 @@
 	>
 		<div class="w-1/3">Logo</div>
 
-		<nav class="hidden w-1/3 gap-6 lg:flex">
+		<nav class="hidden w-1/3 items-center justify-center gap-6 lg:flex">
 			{#each NAV_LINKS as navLink}
 				<div class="relative">
 					<a
@@ -48,14 +48,6 @@
 		</nav>
 
 		<div class="hidden w-max items-center justify-between gap-8 lg:flex lg:w-1/3">
-			<div class="items-center gap-1.5 lg:hidden xl:flex">
-				<p class="text-subtext-text text-sm">Email:</p>
-
-				<a href="/" class="hover:text-subtext-text text-sm font-medium transition-colors"
-					>hello@notradioopaque.dev</a
-				>
-			</div>
-
 			<div class="ml-auto min-w-[120px] flex-shrink-0">
 				<Button label="Get in touch" action={() => {}} />
 			</div>
