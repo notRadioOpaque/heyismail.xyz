@@ -7,17 +7,17 @@ export const SITE_URL = 'https://yourdomain.com';
 export const SOCIALS = [
 	{
 		label: 'Github',
-		href: '/',
+		href: 'https://github.com/notRadioOpaque',
 		icon: '/icons/github_icon.svg'
 	},
 	{
 		label: 'LinkedIn',
-		href: '/',
+		href: 'https://www.linkedin.com/in/notradioopaque/',
 		icon: '/icons/linkedin_icon.svg'
 	},
 	{
 		label: 'Twitter',
-		href: '/',
+		href: 'https://x.com/notRadioOpaque',
 		icon: '/icons/twitter_icon.svg'
 	},
 	{
