@@ -1,22 +1,20 @@
 <script lang="ts">
 	import { Dot, ProjectCard } from '$lib/components';
-	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
-	const pageTitle = '{> Featured Projects <}';
+	const pageTitle = '{> Featured Works <}';
 
 	let section: any;
 	let title: HTMLDivElement;
 	let description: HTMLDivElement;
-	let button: HTMLHeadingElement;
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
-		if (!section || !title || !description || !button) return;
+		if (!section || !title || !description) return;
 
 		const tl = gsap.timeline({
 			scrollTrigger: {
@@ -26,7 +24,7 @@
 			}
 		});
 
-		tl.from([title, description, button], {
+		tl.from([title, description], {
 			y: 50,
 			opacity: 0,
 			duration: 0.5,
@@ -53,15 +51,11 @@
 
 		<p
 			bind:this={description}
-			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white xl:w-[90%] xl:text-[88px]
+			class="w-full text-[36px] leading-[45px] tracking-[-0.7px] text-white xl:w-[90%] xl:text-[70px]
 			xl:leading-[92px] xl:tracking-[-3.7px]"
 		>
 			I blend creativity with technical expertise
 		</p>
-
-		<div bind:this={button} class="mt-10 xl:mt-24">
-			<SpecialBtn label="Become a client" action={() => {}} />
-		</div>
 	</div>
 
 	<div
