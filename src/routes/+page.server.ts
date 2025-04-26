@@ -7,9 +7,6 @@ export async function load() {
     image,
     role,
     email,
-    inspoList,
-    resumeLink,
-    techStack,
   }`;
 
 	const about = await client.fetch(query);

@@ -6,6 +6,12 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+	let { role, email, techStack, inspoList, image, resumeLink } = data.about[0];
+
+	const languages = techStack.filter((tech: any) => tech.category === 'language');
+	const backend = techStack.filter((tech: any) => tech.category === 'backend');
+	const frameworks = techStack.filter((tech: any) => tech.category === 'framework');
+	const tools = techStack.filter((tech: any) => tech.category === 'tool');
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
@@ -70,15 +76,16 @@
 
 	<div bind:this={block} class="flex flex-col gap-10 lg:flex-row lg:gap-0">
 		<div class="p-6 pt-0 lg:w-1/3 lg:p-20">
-			<div class="flex w-full flex-col items-center gap-4">
-				<div class="w-full overflow-hidden rounded-xl">
-					<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
+			<div class="mt-1.5 flex w-full flex-col items-center gap-4">
+				<div class="h-[300px] w-full overflow-hidden rounded-xl shadow-2xl">
+					<img class="block h-full w-full object-cover" src={image} alt="" />
 				</div>
 
 				<div class="flex w-full justify-between gap-4">
-					<button
+					<a
+						href={resumeLink}
 						class="bg-btn-bg hover:text-primary-text hover:bg-btn-hover-bg flex w-full cursor-pointer items-center justify-center gap-2 rounded-md p-4 text-sm font-medium text-white transition-colors"
-						>View Resume <img class="w-5" src="./icons/link_icon.svg" alt="" /></button
+						>View Resume <img class="w-5" src="./icons/link_icon.svg" alt="" /></a
 					>
 					<button
 						class="bg-btn-bg hover:text-primary-text hover:bg-btn-hover-bg flex w-max cursor-pointer items-center justify-center rounded-md p-4 text-sm font-medium transition-colors"
@@ -91,7 +98,7 @@
 						href="/"
 						class="text-primary-text hover:border-secondary-bg border-b border-transparent text-[20px] leading-[20px] tracking-[-0.6px] transition-all hover:border-b"
 					>
-						hello<span class="text-tertiary-text">@</span>notradioopaque.dev
+						{email}
 					</a>
 				</div>
 			</div>
@@ -200,24 +207,68 @@
 					</p>
 				</div>
 
-				<div class="mt-6 flex w-full flex-col gap-8 lg:flex-row">
+				<div class="mt-6 flex w-full flex-col gap-8 md:flex-row">
 					<div class="flex w-full flex-col gap-4">
 						<h3
 							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
 						>
-							Tech Stack
+							Languages
+						</h3>
+
+						<div class="flex flex-col gap-3">
+							{#each languages as { name, url, icon }}
+								<a href={url} class="flex items-center gap-3">
+									<div class="h-5 w-5">
+										<img src={icon} class="h-full w-full" alt="" />
+									</div>
+									<p
+										class="text-tertiary-text text-sm break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
+									>
+										{name}
+									</p>
+								</a>
+							{/each}
+						</div>
+
+						<h3
+							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+						>
+							Framework
 						</h3>
 
 						<ul class="flex flex-col gap-3">
-							{#each TECH_STACK as { name, url, description }}
-								<li class="flex items-center gap-3">
-									<div class="bg-tertiary-bg h-5 w-5"></div>
-									<a
-										href={url}
-										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
-										>{name}</a
+							{#each frameworks as { name, url, icon }}
+								<a href={url} class="flex items-center gap-3">
+									<div class="h-5 w-5">
+										<img src={icon} class="h-full w-full" alt="" />
+									</div>
+									<p
+										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
-								</li>
+										{name}
+									</p>
+								</a>
+							{/each}
+						</ul>
+
+						<h3
+							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+						>
+							Backend
+						</h3>
+
+						<ul class="flex flex-col gap-3">
+							{#each backend as { name, url, icon }}
+								<a href={url} class="flex items-center gap-3">
+									<div class="h-5 w-5">
+										<img src={icon} class="h-full w-full" alt="" />
+									</div>
+									<p
+										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
+									>
+										{name}
+									</p>
+								</a>
 							{/each}
 						</ul>
 					</div>
@@ -226,19 +277,21 @@
 						<h3
 							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
 						>
-							Tech Stack
+							Tools
 						</h3>
 
 						<ul class="flex flex-col gap-3">
-							{#each TOOLS as { name, url, description }}
-								<li class="flex items-center gap-3">
-									<div class="bg-tertiary-bg h-5 w-5"></div>
-									<a
-										href={url}
-										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
-										>{name}</a
+							{#each tools as { name, url, icon }}
+								<a href={url} class="flex items-center gap-3">
+									<div class="h-5 w-5">
+										<img src={icon} class="h-full w-full" alt="" />
+									</div>
+									<p
+										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
-								</li>
+										{name}
+									</p>
+								</a>
 							{/each}
 						</ul>
 					</div>
