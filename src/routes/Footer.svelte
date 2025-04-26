@@ -117,14 +117,14 @@
 						<p class="text-subtext-text text-base">Contact me</p>
 						<a
 							href="/"
-							class="text-[24px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 xl:text-[40px]"
+							class="text-[20px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 xl:text-[32px]"
 						>
-							hello<span class="text-tertiary-text">@</span>notradioopaque.dev
+							ismailmuyideen.c05<span class="text-tertiary-text">@</span>gmail.com
 						</a>
 					</div>
 
 					<p
-						class="text-subtext-text w-full text-base leading-[26px] tracking-[-0.7] xl:w-[480px] xl:text-[22px]"
+						class="text-subtext-text w-full text-base leading-[32px] tracking-[-0.7] xl:w-[480px] xl:text-[22px]"
 					>
 						Wanna have a one on one with me, use this button 👇
 					</p>

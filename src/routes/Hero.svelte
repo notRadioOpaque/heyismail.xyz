@@ -126,7 +126,7 @@
 					bind:this={heroText1}
 					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
-					Hi! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>,
+					Hey! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>,
 				</h1>
 				<h1
 					bind:this={heroText2}
