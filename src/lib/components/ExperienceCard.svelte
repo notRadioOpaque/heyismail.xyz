@@ -6,9 +6,10 @@
 		startDate: string;
 		endDate: string;
 		description: string;
+		link: string;
 	}
 
-	let { role, company, icon, startDate, endDate, description }: Props = $props();
+	let { role, company, icon, startDate, endDate, description, link }: Props = $props();
 
 	import { parseISO, format } from 'date-fns';
 
@@ -20,8 +21,8 @@
 
 <div class="flex gap-3 xl:gap-10">
 	<a
-		href="/"
-		class="border-border-stroke-light flex aspect-square h-[70px] w-[70px] items-center justify-center rounded-lg border bg-[#3d8c2e] p-3"
+		href={link}
+		class="border-border-stroke-light flex aspect-square h-[70px] w-[70px] items-center justify-center rounded-lg bg-[#3d8c2e] p-3"
 	>
 		<img src={icon} alt="logo" class="block h-full w-full rounded-lg object-contain" />
 	</a>

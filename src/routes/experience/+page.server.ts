@@ -10,7 +10,8 @@ export async function load() {
     endDate,
     description,
     tech,
-    icon
+    icon,
+    link
   }`;
 
 	const experiences = await client.fetch(query);

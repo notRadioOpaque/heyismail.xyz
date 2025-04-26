@@ -6,7 +6,7 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
-	let { role, email, techStack, inspoList, image, resumeLink } = data.about[0];
+	let { email, techStack, image, resumeLink } = data.about[0];
 
 	const languages = techStack.filter((tech: any) => tech.category === 'language');
 	const backend = techStack.filter((tech: any) => tech.category === 'backend');
@@ -203,7 +203,7 @@
 						class="text-secondary-text text-base xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 					>
 						Technologies, platforms, and gadgets I use regularly as a frontend developer — from
-						React to Twitch, from Figma to my trusty MacBook.
+						React to Obsidian, from Figma to my trusty MacBook.
 					</p>
 				</div>
 
@@ -298,7 +298,7 @@
 				</div>
 			</div>
 
-			<div class="my-12 flex flex-col gap-4">
+			<!-- <div class="my-12 flex flex-col gap-4">
 				<h3 class="text-[24px] leading-[33px] font-semibold tracking-[-1px]">The Inspo List</h3>
 				<p
 					class="text-secondary-text w-full text-base xl:w-[90%] xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
@@ -354,7 +354,7 @@
 						</div>
 					{/if}
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
