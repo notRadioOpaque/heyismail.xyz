@@ -4,13 +4,13 @@ export const prerender = true; // Enable SSG
 
 export async function load() {
 	const query = `*[_type == "experience"] | order(_createdAt desc) {
-    _id,
     company,
-    position,
+    role,
     startDate,
     endDate,
-    summary,
-    tech
+    description,
+    tech,
+    icon
   }`;
 
 	const experiences = await client.fetch(query);

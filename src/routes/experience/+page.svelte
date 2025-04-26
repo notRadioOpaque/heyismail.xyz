@@ -9,8 +9,9 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+	let experiences = data.experiences;
 
-	$inspect(data);
+	$inspect(experiences);
 
 	const thisYear = new Date().getFullYear();
 	const years = Array.from({ length: thisYear - 2022 + 1 }, (_, i) => thisYear - i);
@@ -120,7 +121,7 @@
 		</p>
 
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-24">
-			{#each EXPERIENCES as experience}
+			{#each experiences as experience}
 				<ExperienceCard {...experience} />
 			{/each}
 		</div>
