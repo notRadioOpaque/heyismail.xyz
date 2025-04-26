@@ -22,6 +22,20 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Blog - Ismail Muyideen</title>
+	<meta
+		name="description"
+		content="Explore the written works, thoughts and opinion, on things i've feel strongly about, things that interest me and things that might benefit others."
+	/>
+	<meta property="og:title" content="Blog - Ismail Muyideen" />
+	<meta
+		property="og:description"
+		content="Check out my thought on certain topics, interest and more."
+	/>
+	<meta property="og:url" content="https://heyismail.xyz/blog" />
+</svelte:head>
+
 <div
 	class="3xl:max-w-screen-3xl mx-auto flex h-[750px] w-full max-w-screen-xl flex-col gap-28 px-20 py-[70px] 2xl:max-w-screen-2xl"
 >

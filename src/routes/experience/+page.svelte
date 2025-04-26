@@ -52,6 +52,17 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Experiences - Ismail Muyideen</title>
+	<meta
+		name="description"
+		content="The experiences i've gather over the years, a significant part of the journey."
+	/>
+	<meta property="og:title" content="Experiences - Ismail Muyideen" />
+	<meta property="og:description" content="Check out the experiences i've had over the years." />
+	<meta property="og:url" content="https://heyismail.xyz/experience" />
+</svelte:head>
+
 <section
 	class="3xl:max-w-screen-3xl mx-auto flex max-w-screen-xl flex-col gap-14 px-6 py-[70px] lg:gap-24 lg:px-20 xl:gap-28 2xl:max-w-screen-2xl"
 >

@@ -36,6 +36,20 @@
 	let selected: any = $state(null);
 </script>
 
+<svelte:head>
+	<title>About - Ismail Muyideen</title>
+	<meta
+		name="description"
+		content="Learn about Ismail Muyideen, a frontend developer creating impactful user experiences."
+	/>
+	<meta property="og:title" content="About - Ismail Muyideen" />
+	<meta
+		property="og:description"
+		content="Discover my journey, background, and expertise in frontend development."
+	/>
+	<meta property="og:url" content="https://heyismail.xyz/about" />
+</svelte:head>
+
 <div
 	class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-8 py-[70px] xl:gap-0 2xl:max-w-screen-2xl"
 >

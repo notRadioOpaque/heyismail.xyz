@@ -138,13 +138,13 @@
 					bind:this={heroText3}
 					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
-					building impactful products and
+					building impactful products
 				</h1>
 				<h1
 					bind:this={heroText}
 					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
-					open to full-time roles
+					and open to full-time roles.
 				</h1>
 			</div>
 		</div>

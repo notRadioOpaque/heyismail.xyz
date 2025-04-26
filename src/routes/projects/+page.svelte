@@ -42,6 +42,20 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Projects - Ismail Muyideen</title>
+	<meta
+		name="description"
+		content="Explore the projects I've worked on as a frontend developer, from UI designs to interactive web applications."
+	/>
+	<meta property="og:title" content="Projects - Ismail Muyideen" />
+	<meta
+		property="og:description"
+		content="Check out the web development projects I've built, including my work with Svelte, React, and more."
+	/>
+	<meta property="og:url" content="https://heyismail.xyz/projects" />
+</svelte:head>
+
 <section
 	class="3xl:max-w-screen-3xl mx-auto max-w-screen-xl px-6 py-[70px] lg:mb-10 lg:px-[160px] 2xl:max-w-screen-2xl"
 >
