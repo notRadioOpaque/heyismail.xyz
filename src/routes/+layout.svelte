@@ -17,6 +17,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://heyismail.xyz/default-og-image.png" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="icon" href="/ghost_hand.svg" type="image/svg+xml" />
 </svelte:head>
 
 <Header />

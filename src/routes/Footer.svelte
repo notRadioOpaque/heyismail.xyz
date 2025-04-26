@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import SplitType from 'split-type';
+	import Logo from './Logo.svelte';
 
 	let footer: any;
 	let heroText: HTMLHeadingElement;
@@ -138,7 +139,8 @@
 		<div
 			class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-6 px-6 py-8 lg:flex-row lg:px-20 xl:gap-0 xl:px-0 xl:py-[30px] 2xl:max-w-screen-2xl"
 		>
-			<div class="text-2xl text-white">Logo</div>
+			<!-- <div class="text-2xl text-white">Logo</div> -->
+			<Logo variant={'light'} />
 
 			<p class="text-subtext-text text-sm">Copyright © Ismail Muyideen, {currentYear}</p>
 

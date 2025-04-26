@@ -3,6 +3,7 @@
 	import { NAV_LINKS } from '$lib/constants';
 	import { page } from '$app/state';
 	import { fly } from 'svelte/transition';
+	import Logo from './Logo.svelte';
 
 	let currentPath: string = $state('');
 	let menuOpen = $state(false);
@@ -30,7 +31,9 @@
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between 2xl:max-w-screen-2xl"
 	>
-		<div class="w-1/3">Logo</div>
+		<div class="w-1/3">
+			<Logo variant={'dark'} />
+		</div>
 
 		<nav class="hidden w-1/3 items-center justify-center gap-6 lg:flex">
 			{#each NAV_LINKS as navLink}

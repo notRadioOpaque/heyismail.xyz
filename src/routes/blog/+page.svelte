@@ -8,7 +8,6 @@
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
-	let block: HTMLDivElement;
 
 	onMount(() => {
 		const tl = gsap.timeline();
