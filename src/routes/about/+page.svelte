@@ -203,11 +203,6 @@
 										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 										>{name}</a
 									>
-									<!-- <p
-										class="text-secondary-text text-base break-words whitespace-normal xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
-									>
-										- {description}
-									</p> -->
 								</li>
 							{/each}
 						</ul>
@@ -229,11 +224,6 @@
 										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 										>{name}</a
 									>
-									<!-- <p
-										class="text-secondary-text text-base break-words whitespace-normal xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
-									>
-										- {description}
-									</p> -->
 								</li>
 							{/each}
 						</ul>

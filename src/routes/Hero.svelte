@@ -9,14 +9,29 @@
 
 	let imageDiv: HTMLDivElement;
 	let rightContent: HTMLDivElement;
+	let heroText1: HTMLHeadingElement;
+	let heroText2: HTMLHeadingElement;
+	let heroText3: HTMLHeadingElement;
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
 	let gimmick: HTMLDivElement;
 
 	onMount(() => {
-		if (!heroText || !imageDiv || !rightContent || !gimmick || !subText) return;
+		if (
+			!heroText1 ||
+			!heroText2 ||
+			!heroText3 ||
+			!heroText ||
+			!imageDiv ||
+			!rightContent ||
+			!gimmick ||
+			!subText
+		)
+			return;
 
-		const splitText = new SplitType(heroText, { types: 'chars,words,lines' });
+		const splitText = new SplitType([heroText1, heroText2, heroText3, heroText], {
+			types: 'chars,words,lines'
+		});
 
 		const tl = gsap.timeline();
 
@@ -83,7 +98,7 @@
 			</div>
 
 			<div bind:this={rightContent} class="relative z-10 flex flex-col">
-				<p class="text-[22px] leading-[30.8px] font-medium tracking-[-0.9px]">Ismail Muyideen</p>
+				<p class="-">Ismail Muyideen</p>
 				<p class="text-subtext-text text-[15px] leading-[19.5px] font-medium tracking-[-0.6px]">
 					Software Engineer
 				</p>
@@ -106,14 +121,32 @@
 				<p class="text-primary-text text-sm">Available for work</p>
 			</div>
 
-			<h1
-				bind:this={heroText}
-				class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
-			>
-				Hi! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>, a
-				<span class="text-[#3d8c2e]">Software Engineer</span> building impactful products open to full-time
-				roles
-			</h1>
+			<div>
+				<h1
+					bind:this={heroText1}
+					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
+				>
+					Hi! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>,
+				</h1>
+				<h1
+					bind:this={heroText2}
+					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
+				>
+					a <span class="text-[#3d8c2e]">Software Engineer</span>
+				</h1>
+				<h1
+					bind:this={heroText3}
+					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
+				>
+					building impactful products and
+				</h1>
+				<h1
+					bind:this={heroText}
+					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
+				>
+					open to full-time roles
+				</h1>
+			</div>
 		</div>
 
 		<div bind:this={subText} class="flex flex-col gap-24 lg:gap-14 xl:gap-24">
