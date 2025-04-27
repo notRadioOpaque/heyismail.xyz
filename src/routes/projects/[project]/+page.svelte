@@ -5,7 +5,6 @@
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
 	import { page } from '$app/state';
-	import { goto } from '$app/navigation';
 
 	let { data }: PageProps = $props();
 
