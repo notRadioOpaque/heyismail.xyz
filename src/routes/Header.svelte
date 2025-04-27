@@ -59,7 +59,7 @@
 		<div class="flex items-center justify-center lg:hidden">
 			{#if !menuOpen}
 				<button class="cursor-pointer" onclick={showMenu}>
-					<img src="./icons/menu_icon.svg" class="h-8 w-8" alt="Open menu" />
+					<img src="/icons/menu_icon.svg" class="h-8 w-8" alt="Open menu" />
 				</button>
 			{/if}
 		</div>
