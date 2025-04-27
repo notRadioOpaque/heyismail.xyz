@@ -159,7 +159,7 @@
 
 		<div bind:this={subText} class="flex flex-col gap-24 lg:gap-14 xl:gap-24">
 			<p
-				class="text-lg font-medium text-[#6b6b6b] xl:text-2xl xl:leading-[36px] xl:tracking-[-1px]"
+				class="mb-0 text-lg font-normal text-[#6b6b6b] lg:mb-10 xl:text-2xl xl:leading-[36px] xl:tracking-[-0.8px]"
 			>
 				Driven by performance, design, and collaboration—I deliver impactful software solutions
 				swiftly and efficiently.

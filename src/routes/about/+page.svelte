@@ -85,12 +85,17 @@
 				<div class="flex w-full justify-between gap-4">
 					<a
 						href={resumeLink}
-						class="bg-btn-bg hover:text-primary-text hover:bg-btn-hover-bg flex w-full cursor-pointer items-center justify-center gap-2 rounded-md p-4 text-sm font-medium text-white transition-colors"
-						>View Resume <img class="w-5" src="./icons/link_icon.svg" alt="" /></a
+						class="bg-btn-bg group flex w-full cursor-pointer items-center justify-center gap-2 rounded-md p-4 text-sm font-medium text-white"
+						><p class="transition-transform ease-in-out group-hover:scale-110">View Rèsumè</p></a
 					>
 					<button
-						class="bg-btn-bg hover:text-primary-text hover:bg-btn-hover-bg flex w-max cursor-pointer items-center justify-center rounded-md p-4 text-sm font-medium transition-colors"
-						><img src="./icons/download_icon.svg" alt="" /></button
+						aria-label="download resume"
+						class="bg-btn-bg group hover:text-primary-text flex w-max cursor-pointer items-center justify-center rounded-md p-4 text-sm font-medium transition-colors"
+						><img
+							src="./icons/download_icon.svg"
+							class="transition-transform ease-in-out group-hover:scale-115"
+							alt=""
+						/></button
 					>
 				</div>
 
@@ -110,29 +115,25 @@
 				<p
 					class="text-primary-text text-[20px] leading-[28px] tracking-[-0.2px] xl:text-[24px] xl:leading-[33px] xl:tracking-[-0.5px]"
 				>
-					Hi, I’m Andrew, a passionate web designer with a love for creating visually stunning
-					experiences. With a strong background in design and front-end development, I specialize in
-					crafting responsive websites that not only look great but also provide interactions across
-					all devices.
+					Hi, I’m Ismail, a passionate Software Engineer with a passion for crafting pixel-perfect,
+					immersive, and accessible digital experiences that captivate and engage users, blending
+					creativity with precision to bring ideas to life.
 				</p>
 
 				<div
 					class="text-secondary-text my-6 flex flex-col gap-4 text-base xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 				>
 					<p>
-						Over the years, I’ve had the opportunity to work with a diverse range of clients, from
-						startups to established brands, helping them bring their visions to life online.
+						These days, my primary focus is on building accessible user interfaces. I thrive in the
+						space where design meets engineering, creating experiences that not only look great but
+						are also well-constructed behind the scenes. The process of blending aesthetics with
+						functionality is incredibly rewarding for me.
 					</p>
 
 					<p>
-						I strongly believe in continuous learning and improving myself, so I try my best to
-						learn in any situation possible, unfavorable or not.
-					</p>
-
-					<p>
-						Beyond learning, I enjoy writing technical articles and creating projects that both
-						inspire and benefit fellow developers. You can find my recent posts on freeCodeCamp and
-						my personal blog hosted on this site.
+						When I’m not coding, you’ll find me enjoying podcasts, reading, spending time with my
+						little brother, or shooting hoops on the basketball court. These activities keep me
+						balanced and inspired, fueling my creativity both on and off the screen.
 					</p>
 				</div>
 
@@ -154,8 +155,8 @@
 								<span
 									class="text-secondary-text text-base break-words whitespace-normal xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 								>
-									I take pleasure in creating designs and UIs with careful precision, emphasizing
-									quality over quantity.
+									I enjoy crafting designs and user interfaces with meticulous attention to detail,
+									always prioritizing quality over quantity.
 								</span>
 							</div>
 						</li>
@@ -170,9 +171,10 @@
 								<span
 									class="text-secondary-text text-base break-words whitespace-normal xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 								>
-									I founded a community on GitHub called Communitypro that helps newbie developers
-									learn how to contribute to open-source projects and collaborate in building
-									together. Currently we are over 400 people strong with room for growth.
+									I'm passionate about open-source because it’s where real collaboration happens —
+									people from all over the world building, learning, and solving problems together.
+									Contributing to open-source has taught me how to communicate better, work across
+									different codebases, and be part of something bigger than myself.
 								</span>
 							</div>
 						</li>
@@ -187,9 +189,9 @@
 								<span
 									class="text-secondary-text text-base break-words whitespace-normal xl:text-[18px] xl:leading-[28px] xl:tracking-[-0.2px]"
 								>
-									I understand people are busy and would love to get things done timely, so I do my
-									best in delivering assignments and projects with little supervision, sparing you
-									the need to closely manage/oversee my work.
+									I recognize that everyone’s time is valuable, so I take pride in delivering
+									assignments and projects efficiently with minimal supervision. This allows you to
+									focus on bigger priorities without the need for close oversight.
 								</span>
 							</div>
 						</li>
@@ -218,16 +220,17 @@
 
 						<div class="flex flex-col gap-3">
 							{#each languages as { name, url, icon }}
-								<a href={url} class="flex items-center gap-3">
+								<li class="flex items-center gap-3">
 									<div class="h-5 w-5">
 										<img src={icon} class="h-full w-full" alt="" />
 									</div>
-									<p
-										class="text-tertiary-text text-sm break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
+									<a
+										href={url}
+										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
 										{name}
-									</p>
-								</a>
+									</a>
+								</li>
 							{/each}
 						</div>
 
@@ -239,16 +242,17 @@
 
 						<ul class="flex flex-col gap-3">
 							{#each frameworks as { name, url, icon }}
-								<a href={url} class="flex items-center gap-3">
+								<li class="flex items-center gap-3">
 									<div class="h-5 w-5">
 										<img src={icon} class="h-full w-full" alt="" />
 									</div>
-									<p
+									<a
+										href={url}
 										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
 										{name}
-									</p>
-								</a>
+									</a>
+								</li>
 							{/each}
 						</ul>
 
@@ -260,16 +264,17 @@
 
 						<ul class="flex flex-col gap-3">
 							{#each backend as { name, url, icon }}
-								<a href={url} class="flex items-center gap-3">
+								<li class="flex items-center gap-3">
 									<div class="h-5 w-5">
 										<img src={icon} class="h-full w-full" alt="" />
 									</div>
-									<p
+									<a
+										href={url}
 										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
 										{name}
-									</p>
-								</a>
+									</a>
+								</li>
 							{/each}
 						</ul>
 					</div>
@@ -283,16 +288,17 @@
 
 						<ul class="flex flex-col gap-3">
 							{#each tools as { name, url, icon }}
-								<a href={url} class="flex items-center gap-3">
+								<li class="flex items-center gap-3">
 									<div class="h-5 w-5">
 										<img src={icon} class="h-full w-full" alt="" />
 									</div>
-									<p
+									<a
+										href={url}
 										class="text-tertiary-text text-base break-words whitespace-normal underline xl:text-base xl:leading-[28px] xl:tracking-[-0.2px]"
 									>
 										{name}
-									</p>
-								</a>
+									</a>
+								</li>
 							{/each}
 						</ul>
 					</div>
