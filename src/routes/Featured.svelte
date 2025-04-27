@@ -4,6 +4,8 @@
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
+	import { FEATURED_WORKS } from '$lib/constants';
 
 	const pageTitle = '{> Featured Works <}';
 
@@ -56,21 +58,30 @@
 		>
 			I blend creativity with technical expertise
 		</p>
+
+		<div class="mt-20">
+			<SpecialBtn label="Explore projects" action={() => goto('/projects')} />
+		</div>
 	</div>
 
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
 	>
 		<div class="flex flex-col items-center border-white lg:flex-row">
-			<div class="border-border-stroke w-full border lg:border-r-0">
+			{#each FEATURED_WORKS as { domain, projectTitle, img, description }}
+				<div class="border-border-stroke w-full border lg:border-r-0">
+					<ProjectCard {domain} {projectTitle} {img} {description} />
+				</div>
+			{/each}
+			<!-- <div class="border-border-stroke w-full border lg:border-r-0">
 				<ProjectCard imgHeight={'460'} />
 			</div>
 			<div class="border-border-stroke w-full border">
 				<ProjectCard imgHeight={'460'} />
-			</div>
+			</div> -->
 		</div>
 
-		<div class="flex h-full flex-col items-center lg:flex-row">
+		<!-- <div class="flex h-full flex-col items-center lg:flex-row">
 			<div
 				class="border-border-stroke w-full border border-t-0 lg:border-t lg:border-r-0 xl:border-t-0"
 			>
@@ -90,7 +101,6 @@
 					<div
 						class="bg-secondary-bg -mr-3 ml-4 flex h-11 w-11 items-center justify-center rounded-full"
 					>
-						<!-- Arrow that rotates on hover -->
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
@@ -109,6 +119,6 @@
 					</div>
 				</button>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
