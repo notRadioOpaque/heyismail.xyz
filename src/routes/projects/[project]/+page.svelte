@@ -36,7 +36,7 @@
 		<button
 			class="cursor-pointer transition-transform ease-in-out hover:scale-110"
 			aria-label="back button"
-			onclick={() => goto('/projects')}
+			onclick={() => history.back()}
 		>
 			<img src="/icons/arrow-left.svg" alt="" class="block h-12 w-12" />
 		</button>
