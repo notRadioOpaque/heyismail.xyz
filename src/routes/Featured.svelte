@@ -67,9 +67,9 @@
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl flex-col gap-4 2xl:max-w-screen-2xl"
 	>
-		<div class="flex flex-col items-center border-white lg:flex-row">
+		<div class="flex flex-col items-center gap-2 border-white lg:flex-row">
 			{#each FEATURED_WORKS as { domain, projectTitle, img, description }}
-				<div class="border-border-stroke w-full border lg:border-r-0">
+				<div class="border-border-stroke w-full border">
 					<ProjectCard {domain} {projectTitle} {img} {description} />
 				</div>
 			{/each}
