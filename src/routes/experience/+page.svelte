@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
-	import { EXPERIENCES, CONTRIBUTION_HIGHLIGHTS } from '$lib/constants';
+	import { CONTRIBUTION_HIGHLIGHTS } from '$lib/constants';
 	import ReactCalendar from '$lib/components/ReactCalendar.svelte';
 	import GraphButton from '$lib/components/GraphButton.svelte';
 	import Dot from '$lib/components/Dot.svelte';
