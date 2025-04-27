@@ -52,7 +52,12 @@
 
 		<div class="hidden w-max items-center justify-between gap-8 lg:flex lg:w-1/3">
 			<div class="ml-auto min-w-[120px] flex-shrink-0">
-				<Button label="Get in touch" action={() => {}} />
+				<Button
+					label="Get in touch"
+					action={() => {
+						window.location.href = 'mailto:ismailmuyideen.c05@gmail.com';
+					}}
+				/>
 			</div>
 		</div>
 

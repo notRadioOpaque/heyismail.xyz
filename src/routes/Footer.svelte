@@ -115,12 +115,14 @@
 				<div class="mb-4 flex flex-col gap-7">
 					<div class="flex flex-col gap-4">
 						<p class="text-subtext-text text-base">Contact me</p>
-						<a
-							href="/"
-							class="text-[20px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 xl:text-[32px]"
+						<button
+							onclick={() => {
+								window.location.href = 'mailto:ismailmuyideen.c05@gmail.com';
+							}}
+							class="text-left text-[20px] leading-[40px] tracking-[-1.2px] text-white transition-transform hover:translate-x-4 xl:text-[32px]"
 						>
 							ismailmuyideen.c05<span class="text-tertiary-text">@</span>gmail.com
-						</a>
+						</button>
 					</div>
 
 					<p
