@@ -101,6 +101,8 @@
 								{#each SOCIALS as { icon, label, href }}
 									<a
 										{href}
+										target="_blank"
+										rel="noopener noreferrer"
 										class="hover:bg-tertiary-bg rounded-md border bg-[#3d8c2e] p-1 transition-all ease-in-out"
 									>
 										<img src={icon} class="h-full w-full" alt={label + ' ' + 'icon'} />
