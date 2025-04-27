@@ -80,7 +80,11 @@
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
 						<div class="h-[120px] w-[120px] overflow-hidden rounded-xl">
-							<img class="block h-full w-full object-cover" src="/images/ismail.jpg" alt="" />
+							<img
+								class="block h-full w-full object-cover"
+								src="/images/ismail_small.webp"
+								alt=""
+							/>
 						</div>
 
 						<div class="flex flex-col">

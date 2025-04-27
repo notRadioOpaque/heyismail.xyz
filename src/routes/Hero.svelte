@@ -6,8 +6,6 @@
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 	import { gsap } from 'gsap';
 	import SplitType from 'split-type';
-	import { usePlaceholderImage } from '$lib/usePlaceholderImage';
-	import LazyImage from '$lib/components/LazyImage.svelte';
 
 	let { image } = $props();
 
@@ -87,8 +85,6 @@
 	const navigateToAbout = () => {
 		goto('/about');
 	};
-
-	const { src, placeholder } = usePlaceholderImage(image);
 </script>
 
 <section
@@ -100,9 +96,7 @@
 				bind:this={imageDiv}
 				class="relative z-20 h-[170px] w-[150px] overflow-hidden rounded-xl shadow-md xl:w-[160px]"
 			>
-				<!-- <img class="block h-full w-full object-cover" src={image} alt="" /> -->
-
-				<LazyImage {src} {placeholder} alt="my picture" />
+				<img class="block h-full w-full object-cover" src="/images/ismail_small.webp" alt="" />
 			</div>
 
 			<div bind:this={rightContent} class="relative z-10 flex flex-col">
