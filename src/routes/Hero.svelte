@@ -6,6 +6,8 @@
 	import SpecialBtn from '$lib/components/SpecialBtn.svelte';
 	import { gsap } from 'gsap';
 	import SplitType from 'split-type';
+	import { usePlaceholderImage } from '$lib/usePlaceholderImage';
+	import LazyImage from '$lib/components/LazyImage.svelte';
 
 	let { image } = $props();
 
@@ -85,6 +87,8 @@
 	const navigateToAbout = () => {
 		goto('/about');
 	};
+
+	const { src, placeholder } = usePlaceholderImage(image);
 </script>
 
 <section
@@ -94,9 +98,11 @@
 		<div class="flex h-full w-full items-center gap-4 xl:mt-16">
 			<div
 				bind:this={imageDiv}
-				class="relative z-20 h-[170px] w-[100px] overflow-hidden rounded-xl shadow-md xl:w-[160px]"
+				class="relative z-20 h-[170px] w-[150px] overflow-hidden rounded-xl shadow-md xl:w-[160px]"
 			>
-				<img class="block h-full w-full object-cover" src={image} alt="" />
+				<!-- <img class="block h-full w-full object-cover" src={image} alt="" /> -->
+
+				<LazyImage {src} {placeholder} alt="my picture" />
 			</div>
 
 			<div bind:this={rightContent} class="relative z-10 flex flex-col">
@@ -128,7 +134,7 @@
 					bind:this={heroText1}
 					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
-					Hey! I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>,
+					I'm <span class="text-[#6b6b6b]">Ismail Muyideen</span>,
 				</h1>
 				<h1
 					bind:this={heroText2}

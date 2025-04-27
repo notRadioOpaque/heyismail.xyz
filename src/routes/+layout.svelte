@@ -4,7 +4,9 @@
 	import Footer from './Footer.svelte';
 	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
 
-	let { children } = $props();
+	let { children, data } = $props();
+
+	$inspect(data);
 </script>
 
 <svelte:head>

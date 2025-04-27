@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { TECH_STACK, TOOLS, DEVELOPERS } from '$lib/constants';
 	import Dot from '$lib/components/Dot.svelte';
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
+	import { usePlaceholderImage } from '$lib/usePlaceholderImage';
+	import LazyImage from '$lib/components/LazyImage.svelte';
 
 	let { data }: PageProps = $props();
 	let { email, techStack, image, resumeLink } = data.about[0];
@@ -12,6 +13,8 @@
 	const backend = techStack.filter((tech: any) => tech.category === 'backend');
 	const frameworks = techStack.filter((tech: any) => tech.category === 'framework');
 	const tools = techStack.filter((tech: any) => tech.category === 'tool');
+
+	const { src, placeholder } = usePlaceholderImage(image);
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
@@ -38,8 +41,6 @@
 			'-=0.2'
 		);
 	});
-
-	let selected: any = $state(null);
 </script>
 
 <svelte:head>
@@ -77,8 +78,8 @@
 	<div bind:this={block} class="flex flex-col gap-10 lg:flex-row lg:gap-0">
 		<div class="p-6 pt-0 lg:w-1/3 lg:p-20">
 			<div class="mt-1.5 flex w-full flex-col items-center gap-4">
-				<div class="h-[300px] w-full overflow-hidden rounded-xl shadow-2xl">
-					<img class="block h-full w-full object-cover" src={image} alt="" />
+				<div class="h-[400px] w-full overflow-hidden rounded-xl shadow-2xl lg:h-[300px]">
+					<LazyImage {src} {placeholder} alt="Cool project" />
 				</div>
 
 				<div class="flex w-full justify-between gap-4">
@@ -207,10 +208,10 @@
 					</p>
 				</div>
 
-				<div class="mt-6 flex w-full flex-col gap-8 md:flex-row">
+				<div class="mt-6 flex w-full flex-row gap-8">
 					<div class="flex w-full flex-col gap-4">
 						<h3
-							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+							class="text-primary-text mt-3 text-[18px] leading-[28px] font-semibold tracking-[-0.4px] lg:mt-6"
 						>
 							Languages
 						</h3>
@@ -231,7 +232,7 @@
 						</div>
 
 						<h3
-							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+							class="text-primary-text mt-3 text-[18px] leading-[28px] font-semibold tracking-[-0.4px] lg:mt-6"
 						>
 							Framework
 						</h3>
@@ -252,9 +253,9 @@
 						</ul>
 
 						<h3
-							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+							class="text-primary-text mt-3 text-[18px] leading-[28px] font-semibold tracking-[-0.4px] lg:mt-6"
 						>
-							Backend
+							platforms
 						</h3>
 
 						<ul class="flex flex-col gap-3">
@@ -275,7 +276,7 @@
 
 					<div class="flex w-full flex-col gap-4">
 						<h3
-							class="text-primary-text text-[18px] leading-[28px] font-semibold tracking-[-0.4px]"
+							class="text-primary-text mt-3 text-[18px] leading-[28px] font-semibold tracking-[-0.4px] lg:mt-6"
 						>
 							Tools
 						</h3>

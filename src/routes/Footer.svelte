@@ -13,13 +13,7 @@
 	onMount(() => {
 		const splitText = new SplitType(heroText, { types: 'chars,words,lines' });
 
-		const tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: footer,
-				start: '-30% top',
-				end: 'bottom center'
-			}
-		});
+		const tl = gsap.timeline();
 
 		tl.from(splitText.lines, {
 			y: 40,
@@ -85,8 +79,8 @@
 			<div class="order-1 flex w-full flex-col gap-10 lg:px-0 xl:order-2 xl:w-1/2 xl:pl-14">
 				<div class="h-max">
 					<div class="flex h-[150px] w-full items-center gap-4">
-						<div class="w-[100px] overflow-hidden rounded-xl">
-							<img class="block h-full w-full object-cover" src="/images/ismail.png" alt="" />
+						<div class="h-[120px] w-[120px] overflow-hidden rounded-xl">
+							<img class="block h-full w-full object-cover" src="/images/ismail.jpg" alt="" />
 						</div>
 
 						<div class="flex flex-col">
