@@ -106,7 +106,7 @@
 				<div class="mt-4 flex gap-4">
 					{#each SOCIALS as { icon, label, href }}
 						<a {href} class="transition-transform ease-in-out hover:scale-110">
-							<img src={icon} alt={label + ' ' + 'icon'} />
+							<img src={icon} class="h-full w-full" alt={label + ' ' + 'icon'} />
 						</a>
 					{/each}
 				</div>

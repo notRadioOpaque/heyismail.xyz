@@ -20,7 +20,7 @@
 			<div
 				class="transition-transform duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]"
 			>
-				<img src="/icons/arrow_enter.svg" alt="" />
+				<img src="/icons/arrow_enter.svg" class="h-full w-full" alt="" />
 			</div>
 		</div>
 	</div>

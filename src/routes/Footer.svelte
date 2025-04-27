@@ -105,7 +105,7 @@
 										{href}
 										class="hover:bg-tertiary-bg rounded-md border bg-[#3d8c2e] p-1 transition-all ease-in-out"
 									>
-										<img src={icon} alt={label + ' ' + 'icon'} />
+										<img src={icon} class="h-full w-full" alt={label + ' ' + 'icon'} />
 									</a>
 								{/each}
 							</div>

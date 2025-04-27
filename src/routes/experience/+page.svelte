@@ -113,7 +113,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col gap-10 lg:gap-16 xl:gap-20">
+	<div class="mb-10 flex flex-col gap-10 lg:mb-20 lg:gap-16 xl:gap-20">
 		<p
 			class="text-primary-text text-[24px] leading-[23px] tracking-[-0.9px] xl:text-[40px] xl:leading-[46px] xl:tracking-[-1.8px]"
 		>
