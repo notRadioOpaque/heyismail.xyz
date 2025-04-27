@@ -4,11 +4,10 @@
 	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
+	import { goto } from '$app/navigation';
 
 	let { data }: PageProps = $props();
 	let projects = data.projects;
-
-	$inspect(projects);
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
@@ -38,10 +37,10 @@
 
 	let projectCount = [1, 2, 3];
 
-	const learnMoreBtnClicked = (e: MouseEvent) => {
+	const learnMoreBtnClicked = (e: MouseEvent, url: string) => {
 		e.preventDefault();
 
-		console.log('learn more btn clicked');
+		goto(`/projects/${url}`);
 	};
 </script>
 
@@ -79,10 +78,8 @@
 
 	<div bind:this={block} class="mt-10 flex flex-col gap-14 xl:mt-20 xl:gap-[120px]">
 		{#each projects as { projectTitle, _id, shortDescription, description, coverImage, domain }}
-			<a href={`/projects/${_id}`} class="flex flex-col gap-8">
-				<div
-					class="h-[350px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 xl:h-[683px]"
-				>
+			<a href={`/projects/${projectTitle}`} class="flex flex-col gap-8">
+				<div class="h-max overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 xl:h-max">
 					<img src={coverImage} alt="" />
 				</div>
 
@@ -90,7 +87,7 @@
 					<div class="flex flex-col gap-4">
 						<p class="text-subtext-text text-sm xl:text-[17px]">{domain}</p>
 						<p
-							class="text-primary-text text-[24px] leading-[33px] tracking-[-1.2px] xl:text-[60px] xl:leading-[66px] xl:tracking-[-2.4px]"
+							class="text-primary-text text-[24px] leading-[33px] tracking-[-1.2px] xl:text-[40px] xl:leading-[40px] xl:tracking-[-2.4px]"
 						>
 							{projectTitle}
 						</p>
@@ -100,7 +97,7 @@
 					</div>
 
 					<div class="mt-6 xl:mt-0">
-						<Button label="Learn more" action={learnMoreBtnClicked} />
+						<Button label="Learn more" action={(e: any) => learnMoreBtnClicked(e, projectTitle)} />
 					</div>
 				</div>
 			</a>
