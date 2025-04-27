@@ -2,6 +2,11 @@
 	import Featured from './Featured.svelte';
 	import Hero from './Hero.svelte';
 	import Socials from './Socials.svelte';
+
+	let { data } = $props();
+	const { image } = data.about[0];
+
+	// $inspect(about);
 </script>
 
 <svelte:head>
@@ -18,6 +23,6 @@
 	<meta property="og:url" content="https://heyismail.xyz/" />
 </svelte:head>
 
-<Hero />
+<Hero {image} />
 <Featured />
 <Socials />

@@ -7,6 +7,8 @@
 	import { gsap } from 'gsap';
 	import SplitType from 'split-type';
 
+	let { image } = $props();
+
 	let imageDiv: HTMLDivElement;
 	let rightContent: HTMLDivElement;
 	let heroText1: HTMLHeadingElement;
@@ -92,9 +94,9 @@
 		<div class="flex h-full w-full items-center gap-4 xl:mt-16">
 			<div
 				bind:this={imageDiv}
-				class="relative z-20 w-[100px] overflow-hidden rounded-xl xl:w-[160px]"
+				class="relative z-20 h-[170px] w-[100px] overflow-hidden rounded-xl shadow-md xl:w-[160px]"
 			>
-				<img class="block h-full w-full object-cover" src="images/ismail.png" alt="" />
+				<img class="block h-full w-full object-cover" src={image} alt="" />
 			</div>
 
 			<div bind:this={rightContent} class="relative z-10 flex flex-col">
