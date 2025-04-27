@@ -11,8 +11,6 @@
 	let { data }: PageProps = $props();
 	let experiences = data.experiences;
 
-	$inspect(experiences);
-
 	const thisYear = new Date().getFullYear();
 	const years = Array.from({ length: thisYear - 2022 + 1 }, (_, i) => thisYear - i);
 

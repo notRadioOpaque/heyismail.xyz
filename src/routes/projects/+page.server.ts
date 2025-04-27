@@ -5,12 +5,15 @@ export const prerender = true; // Enable SSG
 export async function load() {
 	const query = `*[_type == "project"] | order(_createdAt desc) {
     _id,
-    title,
+    coverImage,
     description,
+    shortDescription,
+    domain,
     stack,
-    image,
-    liveUrl,
-    repoUrl
+    projectTitle,
+    links,
+    role,
+    otherImages,
   }`;
 
 	const projects = await client.fetch(query);

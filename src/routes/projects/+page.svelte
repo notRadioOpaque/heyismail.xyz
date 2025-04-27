@@ -6,6 +6,9 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+	let projects = data.projects;
+
+	$inspect(projects);
 
 	let heroText: HTMLHeadingElement;
 	let subText: HTMLDivElement;
@@ -75,24 +78,24 @@
 	</div>
 
 	<div bind:this={block} class="mt-10 flex flex-col gap-14 xl:mt-20 xl:gap-[120px]">
-		{#each projectCount as project}
-			<a href={`/projects/${project}`} class="flex flex-col gap-8">
+		{#each projects as { projectTitle, _id, shortDescription, description, coverImage, domain }}
+			<a href={`/projects/${_id}`} class="flex flex-col gap-8">
 				<div
 					class="h-[350px] overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 xl:h-[683px]"
 				>
-					<img src="" alt="" />
+					<img src={coverImage} alt="" />
 				</div>
 
 				<div class="flex flex-col justify-between xl:flex-row xl:items-center">
 					<div class="flex flex-col gap-4">
-						<p class="text-subtext-text text-sm xl:text-[17px]">Mobile app</p>
+						<p class="text-subtext-text text-sm xl:text-[17px]">{domain}</p>
 						<p
 							class="text-primary-text text-[24px] leading-[33px] tracking-[-1.2px] xl:text-[60px] xl:leading-[66px] xl:tracking-[-2.4px]"
 						>
-							EchoStream Entertainment
+							{projectTitle}
 						</p>
 						<p class="text-subtext-text text-sm xl:text-[22px]">
-							Interface is streamlined for ease of navigation, with clean layouts
+							{shortDescription}
 						</p>
 					</div>
 
