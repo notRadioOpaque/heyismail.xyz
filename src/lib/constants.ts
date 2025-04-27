@@ -1,8 +1,3 @@
-export const SITE_TITLE = 'notRadioOpaque | Frontend Engineer';
-export const SITE_DESCRIPTION =
-	"I'm a frontend engineer passionate about building performant and scalable web applications.";
-export const SITE_URL = 'https://yourdomain.com';
-
 // Social links
 export const SOCIALS = [
 	{
@@ -35,90 +30,6 @@ export const NAV_LINKS = [
 	{ name: 'Blog', path: '/blog' }
 ];
 
-// Projects (for displaying portfolio items)
-export const PROJECTS = [
-	{
-		title: 'Crypto Dashboard',
-		description: 'A web app for tracking wallets and tokens using Solscan & CoinGecko APIs.',
-		tech: ['Next.js', 'TypeScript', 'Solana'],
-		link: 'https://yourproject.com',
-		repo: 'https://github.com/yourrepo'
-	},
-	{
-		title: 'Decentralized Password Manager',
-		description: 'A secure browser extension for storing and managing passwords with encryption.',
-		tech: ['React', 'Node.js', 'Cryptography'],
-		link: 'https://yourpasswordmanager.com',
-		repo: 'https://github.com/yourrepo'
-	}
-];
-
-export const EXPERIENCES = [
-	{
-		role: 'Frontend Developer',
-		company: 'TechNova Solutions',
-		logoURL: '/icons/telegram_icon.svg',
-		startDate: '2022-05',
-		endDate: '2023-08',
-		description:
-			'Built and maintained scalable frontend components using React and Tailwind. Improved UI performance by 25% and collaborated with backend engineers for API integration.'
-	},
-	{
-		role: 'UI/UX Designer',
-		company: 'PixelForge',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2021-01',
-		endDate: '2022-04',
-		description:
-			'Designed intuitive user interfaces and delivered high-fidelity mockups. Contributed to design systems and improved user engagement by 40%.'
-	},
-	{
-		role: 'Web Developer Intern',
-		company: 'BrightLabs',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2020-06',
-		endDate: '2020-12',
-		description:
-			'Assisted in building responsive landing pages. Fixed UI bugs and learned fundamentals of component-based architecture using Vue.js.'
-	},
-	{
-		role: 'Software Engineer',
-		company: 'Nextify Technologies',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2019-03',
-		endDate: '2020-05',
-		description:
-			'Led frontend migration from AngularJS to React. Implemented reusable components and reduced code duplication across multiple projects.'
-	},
-	{
-		role: 'Junior Frontend Engineer',
-		company: 'DevScope',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2018-01',
-		endDate: '2019-02',
-		description:
-			'Worked on dashboard UI for analytics tools. Focused on cross-browser compatibility and accessibility improvements across all pages.'
-	},
-	{
-		role: 'Product Designer',
-		company: 'Craftbase',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2017-04',
-		endDate: '2017-12',
-		description:
-			'Created product design flows and interactive prototypes. Conducted user research and A/B testing for major design iterations.'
-	},
-	{
-		role: 'Tech Support Specialist',
-		company: 'CoreSync Systems',
-		logoURL: '/icons/svelte_icon.svg',
-		startDate: '2016-02',
-		endDate: '2017-03',
-		description:
-			'Provided technical support to enterprise clients. Developed internal knowledge base and automation scripts to reduce support ticket volume.'
-	}
-];
-
 export const GRAPH_THEME = {
 	light: ['#ebedf0', '#a8d18d', '#76c75b', '#5ab93d', '#3d8c2e'],
 	dark: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353']
@@ -130,128 +41,6 @@ export const CONTRIBUTION_HIGHLIGHTS = {
 	2024: 'Boom! I went all in! With 1095 contributions, it was a full throttle year, done with vet school! 🚀',
 	2025: "The year isn't even half over! Let's see how far I can go this year! ⚡🔥"
 };
-
-// Tech stack
-export const TECH_STACK = [
-	{
-		name: 'React',
-		url: 'https://reactjs.org',
-		description: 'UI Library',
-		icon: 'react'
-	},
-	{
-		name: 'Next.js',
-		url: 'https://nextjs.org',
-		description: 'React Framework',
-		icon: 'nextjs'
-	},
-	{
-		name: 'Redux',
-		url: 'https://redux.js.org',
-		description: 'Production-grade State Management',
-		icon: 'redux'
-	},
-	{
-		name: 'Zustand',
-		url: 'https://zustand-demo.pmnd.rs/',
-		description: 'State Management (personal preference)',
-		icon: 'zustand'
-	},
-	{
-		name: 'Sanity',
-		url: 'https://www.sanity.io',
-		description: 'Headless CMS',
-		icon: 'sanity'
-	},
-	{
-		name: 'Tailwind CSS',
-		url: 'https://tailwindcss.com',
-		description: 'Styling Library',
-		icon: 'tailwind'
-	},
-	{
-		name: 'TypeScript',
-		url: 'https://www.typescriptlang.org',
-		description: 'Typed Superset of JavaScript',
-		icon: 'typescript'
-	},
-	{
-		name: 'Sass',
-		url: 'https://sass-lang.com',
-		description: 'CSS Preprocessor',
-		icon: 'sass'
-	},
-	{
-		name: 'VitePress',
-		url: 'https://vitepress.dev',
-		description: 'Static Site Generator',
-		icon: 'vitepress'
-	},
-	{
-		name: 'Python',
-		url: 'https://www.python.org',
-		description: 'Programming Language',
-		icon: 'python'
-	}
-];
-
-// Tools
-export const TOOLS = [
-	{
-		name: 'Visual Studio Code',
-		url: 'https://code.visualstudio.com/',
-		description: 'Text Editor',
-		icon: 'vscode'
-	},
-	{
-		name: 'Postman',
-		url: 'https://www.postman.com/',
-		description: 'API Testing',
-		icon: 'postman'
-	},
-	{
-		name: 'Hoppscotch',
-		url: 'https://hoppscotch.io/',
-		description: 'API Testing/Development',
-		icon: 'hoppscotch'
-	},
-	{
-		name: 'Firefox',
-		url: 'https://www.mozilla.org/firefox/',
-		description: 'Web Browser',
-		icon: 'firefox'
-	},
-	{
-		name: 'Google Chrome',
-		url: 'https://www.google.com/chrome/',
-		description: 'Web Browser',
-		icon: 'chrome'
-	},
-	{
-		name: 'Figma',
-		url: 'https://www.figma.com/',
-		description: 'Design Tool',
-		icon: 'figma'
-	},
-	{
-		name: 'Microsoft Todo',
-		url: 'https://todo.microsoft.com/',
-		description: 'Todo / Task Management',
-		icon: 'todo'
-	},
-	{
-		name: 'Git Bash',
-		url: 'https://git-scm.com/downloads',
-		description: 'Git Terminal',
-		icon: 'gitbash'
-	},
-	{
-		name: 'Notion',
-		url: 'https://www.notion.so/',
-		description: 'Note taking and organization',
-		icon: 'notion'
-	}
-];
 
 export const DEVELOPERS = [
 	{
@@ -353,5 +142,20 @@ export const DEVELOPERS = [
 		reason:
 			'For influencing how we think about React, performance, and the web. Always questioning norms in creative ways.',
 		tags: ['React', 'Performance', 'Web APIs']
+	}
+];
+
+export const FEATURED_WORKS = [
+	{
+		domain: 'Dashboard',
+		projectTitle: 'Auritrack',
+		description: 'Comprehensive personal finance management dashboard',
+		img: '/images/auritrack-dark.JPG'
+	},
+	{
+		domain: 'Dashboard',
+		projectTitle: 'Influx AI',
+		description: 'Crypto analytic tool, leveraging AI for informed decision making',
+		img: '/images/infuxai.png'
 	}
 ];
