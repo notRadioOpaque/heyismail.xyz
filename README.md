@@ -10,7 +10,7 @@
 
 Welcome to **heyismail.xyz** — my personal portfolio built with **SvelteKit**, **TailwindCSS**, **Sanity CMS**, and **GSAP** for those buttery-smooth animations.
 
-This portfolio showcases my projects, blogs, and a bit about me. Feel free to explore, get inspired, and even contribute if you'd like! 😄
+This portfolio showcases my projects, blogs (coming soon...), and a bit about me. Feel free to explore, get inspired, and even contribute if you'd like! 😄
 
 ---
 
