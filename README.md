@@ -1,38 +1,41 @@
-# sv
+# heyismail.xyz 🚀✨
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+[![Made with SvelteKit](https://img.shields.io/badge/Made%20with-SvelteKit-orange?logo=svelte)](https://kit.svelte.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Styled%20with-TailwindCSS-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Powered by Sanity](https://img.shields.io/badge/CMS-Sanity.io-F03E2F?logo=sanity)](https://www.sanity.io/)
+[![Deploys by Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+Welcome to **heyismail.xyz** — my personal portfolio built with **SvelteKit**, **TailwindCSS**, **Sanity CMS**, and **GSAP** for those buttery-smooth animations.
+
+This portfolio showcases my projects, blogs, and a bit about me. Feel free to explore, get inspired, and even contribute if you'd like! 😄
+
+---
+
+## 🖼️ Preview
+
+![Screenshot of heyismail.xyz homepage](/static/images/screenshot.png)
+
+> 📸 _More screenshots coming soon!_
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** [SvelteKit](https://kit.svelte.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **CMS:** [Sanity.io](https://www.sanity.io/)
+- **Animations:** [GSAP](https://gsap.com/)
+
+---
+
+## 🛠️ Installation
+
+Clone the repository:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/your-username/heyismail.xyz.git
+cd heyismail.xyz
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
