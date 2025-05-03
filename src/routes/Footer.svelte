@@ -94,7 +94,7 @@
 							<p
 								class="text-subtext-text text-[15px] leading-[19.5px] font-medium tracking-[-0.6px]"
 							>
-								Software Engineer
+								Frontend Engineer
 							</p>
 
 							<div class="mt-4 flex gap-3">

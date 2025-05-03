@@ -102,7 +102,7 @@
 			<div bind:this={rightContent} class="relative z-10 flex flex-col">
 				<p class="-">Ismail Muyideen</p>
 				<p class="text-subtext-text text-[15px] leading-[19.5px] font-medium tracking-[-0.6px]">
-					Software Engineer
+					Frontend Engineer
 				</p>
 
 				<div class="mt-4 flex gap-4">
@@ -139,7 +139,7 @@
 					bind:this={heroText2}
 					class="text-[32px] leading-[45px] tracking-[-0.7px] xl:text-[70px] xl:leading-[92px] xl:tracking-[-3.7px]"
 				>
-					a <span class="text-[#3d8c2e]">Software Engineer</span>
+					a <span class="text-[#3d8c2e]">Frontend Engineer</span>
 				</h1>
 				<h1
 					bind:this={heroText3}

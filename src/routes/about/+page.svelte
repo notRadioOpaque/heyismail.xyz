@@ -115,9 +115,9 @@
 				<p
 					class="text-primary-text text-[20px] leading-[28px] tracking-[-0.2px] xl:text-[24px] xl:leading-[33px] xl:tracking-[-0.5px]"
 				>
-					Hi, I’m Ismail, a passionate Software Engineer with a passion for crafting pixel-perfect,
-					immersive, and accessible digital experiences that captivate and engage users, blending
-					creativity with precision to bring ideas to life.
+					Hi, I’m Ismail, a Frontend Engineer with a passion for crafting pixel-perfect, immersive,
+					and accessible digital experiences that captivate and engage users, blending creativity
+					with precision to bring ideas to life.
 				</p>
 
 				<div
