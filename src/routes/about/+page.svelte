@@ -84,19 +84,12 @@
 
 				<div class="flex w-full justify-between gap-4">
 					<a
-						href={resumeLink}
+						href="/pdf/Ismail_Muyideen.pdf"
+						download
 						class="bg-btn-bg group flex w-full cursor-pointer items-center justify-center gap-2 rounded-md p-4 text-sm font-medium text-white"
-						><p class="transition-transform ease-in-out group-hover:scale-110">View Rèsumè</p></a
 					>
-					<button
-						aria-label="download resume"
-						class="bg-btn-bg group hover:text-primary-text flex w-max cursor-pointer items-center justify-center rounded-md p-4 text-sm font-medium transition-colors"
-						><img
-							src="./icons/download_icon.svg"
-							class="transition-transform ease-in-out group-hover:scale-115"
-							alt=""
-						/></button
-					>
+						<p class="group-hover:text-tertiary-text transition-color ease-in-out">Get Rèsumè</p>
+					</a>
 				</div>
 
 				<div class="flex flex-col gap-4">
