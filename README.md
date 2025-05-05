@@ -18,8 +18,6 @@ This portfolio showcases my projects, blogs (coming soon...), and a bit about me
 
 ![Screenshot of heyismail.xyz homepage](/static/images/screenshot.png)
 
-> 📸 _More screenshots coming soon!_
-
 ---
 
 ## 🚀 Tech Stack
