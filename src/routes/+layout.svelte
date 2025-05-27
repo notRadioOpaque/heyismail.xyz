@@ -22,7 +22,7 @@
 
 <Header />
 
-<main class="">
+<main class="bg-white">
 	{@render children()}
 </main>
 

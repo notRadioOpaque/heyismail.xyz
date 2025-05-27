@@ -26,13 +26,13 @@
 </script>
 
 <header
-	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b px-6 py-0 lg:px-20 xl:h-full xl:py-8"
+	class="border-border-stroke-light flex h-[80px] items-center justify-between border-b bg-white px-6 py-0 lg:px-20 xl:h-full xl:py-8"
 >
 	<div
 		class="3xl:max-w-screen-3xl mx-auto flex w-full max-w-screen-xl items-center justify-between 2xl:max-w-screen-2xl"
 	>
 		<div class="w-1/3">
-			<Logo variant={'dark'} />
+			<Logo variant="dark" />
 		</div>
 
 		<nav class="hidden w-1/3 items-center justify-center gap-6 lg:flex">

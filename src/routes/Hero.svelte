@@ -7,8 +7,6 @@
 	import { gsap } from 'gsap';
 	import SplitType from 'split-type';
 
-	let { image } = $props();
-
 	let imageDiv: HTMLDivElement;
 	let rightContent: HTMLDivElement;
 	let heroText1: HTMLHeadingElement;
