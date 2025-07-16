@@ -13,7 +13,7 @@
 	<meta property="og:title" content="Home - Ismail Muyideen" />
 	<meta
 		property="og:description"
-		content="Check out my projects, skills, and experience as a frontend developer."
+		content="Check out my projects, skills, and experience as a Software Engineer."
 	/>
 	<meta property="og:url" content="https://heyismail.xyz/" />
 </svelte:head>
